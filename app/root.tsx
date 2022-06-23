@@ -123,7 +123,7 @@ export default function App() {
   return (
     <Document>
       <AppLayout commands={commands}>
-        <div className="py-4 px-10 w-full">
+        <div className="py-2 sm:py-4 px-4 sm:px-10 w-full">
           <div className="prose prose-indigo">
             <Outlet />
           </div>

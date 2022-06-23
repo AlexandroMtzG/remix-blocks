@@ -149,7 +149,7 @@ export default function SidebarMenu({ onSelected }: Props) {
                                           href={menuItem.path}
                                           rel="noreferrer"
                                           className={clsx(
-                                            "pl-14 mt-1 group flex items-center py-2 sm:text-sm leading-5 rounded-sm hover:text-slate-300 focus:outline-none focus:text-slate-300 transition ease-in-out duration-150 text-slate-200 hover:bg-slate-800 focus:bg-slate-800"
+                                            "pl-10 mt-1 group flex items-center py-2 sm:text-sm leading-5 rounded-sm hover:text-slate-300 focus:outline-none focus:text-slate-300 transition ease-in-out duration-150 text-slate-200 hover:bg-slate-800 focus:bg-slate-800"
                                           )}
                                           onClick={onSelected}
                                         >
@@ -161,7 +161,7 @@ export default function SidebarMenu({ onSelected }: Props) {
                                           id={UrlUtils.slugify(getPath(subItem))}
                                           to={getPath(subItem)}
                                           className={clsx(
-                                            "pl-14 mt-1 group flex items-center py-2 sm:text-sm leading-5 rounded-sm hover:text-slate-300 focus:outline-none focus:text-slate-300 transition ease-in-out duration-150",
+                                            "pl-10 mt-1 group flex items-center py-2 sm:text-sm leading-5 rounded-sm hover:text-slate-300 focus:outline-none focus:text-slate-300 transition ease-in-out duration-150",
                                             isCurrent(subItem) && "text-slate-300 bg-theme-600 focus:bg-theme-700",
                                             !isCurrent(subItem) && "text-slate-200 hover:bg-slate-800 focus:bg-slate-800"
                                           )}

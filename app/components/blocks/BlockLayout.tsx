@@ -39,7 +39,7 @@ export default function BlockLayout({ item, children, details, className = "max-
             },
           ]}
         />
-        <div className="flex items-center space-x-2 justify-between">
+        <div className="sm:flex items-center sm:space-x-2 justify-between">
           <h3 className="font-bold text-2xl truncate">{item.title}</h3>
           <div className="flex items-center space-x-2">
             <div>
@@ -63,14 +63,14 @@ export default function BlockLayout({ item, children, details, className = "max-
       {location.pathname.endsWith("code") ? (
         <div className="border-2 border-dashed border-gray-300 rounded-lg overflow-hidden">{children}</div>
       ) : (
-        <div className="border-2 border-dashed border-gray-300 rounded-lg p-8">
+        <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 sm:p-8">
           <div className={className}>{children}</div>
         </div>
       )}
 
       <div className="flex justify-end text-xs pt-2">
         <div>
-          Brought to you by{" "}
+          Sponsored by{" "}
           <a className="underline hover:text-theme-500" href="http://saasrock.com/">
             SaasRock
           </a>

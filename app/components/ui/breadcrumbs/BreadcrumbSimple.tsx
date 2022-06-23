@@ -17,10 +17,10 @@ interface Props {
 export default function BreadcrumbSimple({ menu = [], className = "", home = "" }: Props) {
   const params = useParams();
   return (
-    <nav className={clsx("flex not-prose", className)} aria-label="Breadcrumb">
+    <nav className={clsx("flex not-prose truncate", className)} aria-label="Breadcrumb">
       <ol className="flex items-center space-x-1">
         {home && (
-          <li>
+          <li className="truncate">
             <div>
               <Link to={home.length > 0 ? home : UrlUtils.currentTenantUrl(params, "dashboard")} className="text-gray-300 hover:text-gray-400">
                 <svg className="flex-shrink-0 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -32,7 +32,7 @@ export default function BreadcrumbSimple({ menu = [], className = "", home = "" 
           </li>
         )}
         {menu.map((item, idx) => (
-          <li key={item.title}>
+          <li key={item.title} className="truncate">
             <div className="flex items-center">
               {(idx > 0 || home) && <RightIcon className="flex-shrink-0 h-4 w-4 text-gray-400" />}
               {item.routePath ? (
