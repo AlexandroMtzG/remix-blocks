@@ -1,0 +1,1230 @@
+{
+  "shared": {
+    "hi": "Hi",
+    "or": "Or",
+    "plan": "Plan",
+    "you": "You",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "success": "Success",
+    "error": "Error",
+    "invalidForm": "Form not submitted correctly",
+    "new": "New",
+    "name": "Name",
+    "description": "Description",
+    "current": "Current",
+    "save": "Save",
+    "confirmSave": "Save?",
+    "saved": "Successfully saved",
+    "change": "Change",
+    "saveChanges": "Save changes",
+    "noChanges": "No changes",
+    "request": "Request",
+    "accept": "Accept",
+    "accepted": "Accepted",
+    "reject": "Reject",
+    "rejected": "Rejected",
+    "add": "Add",
+    "added": "Added",
+    "send": "Send",
+    "sendTo": "Send email to: {{0}}.",
+    "sent": "Sent",
+    "delete": "Delete",
+    "confirmDelete": "Delete?",
+    "deleted": "Deleted",
+    "reload": "Reload",
+    "remove": "Remove",
+    "edit": "Edit",
+    "overview": "Overview",
+    "upload": "Upload",
+    "avatar": "Avatar",
+    "icon": "Icon",
+    "back": "Back",
+    "active": "Active",
+    "inactive": "Inactive",
+    "status": "Status",
+    "view": "View",
+    "preview": "Preview",
+    "create": "Create",
+    "created": "Created",
+    "creating": "Creating",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "confirmSubmit": "Submit?",
+    "confirmCreate": "Create {{0}}?",
+    "confirmUpdate": "Update {{0}}?",
+    "yes": "Yes",
+    "no": "No",
+    "in": "in",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "subscribed": "Subscribed",
+    "updateSubscriptionTo": "Update subscription to {{0}}?",
+    "notFound": "Not found",
+    "invite": "Invite",
+    "invalidInvitation": "Invalid invitation account link",
+    "download": "Download",
+    "loading": "Loading",
+    "processing": "Processing",
+    "unauthorized": "Unauthorized",
+    "notSet": "Not set",
+    "note": "Note",
+    "warning": "Warning",
+    "warningCannotUndo": "WARNING: You cannot undo this action.",
+    "all": "All",
+    "unlimited": "Unlimited",
+    "file": "File",
+    "enter": "Enter",
+    "commandPalette": "Search anything...",
+    "search": "Search",
+    "searchDot": "Search...",
+    "searching": "Searching",
+    "optional": "Optional",
+    "by": "by",
+    "actions": "Actions",
+    "updated": "Udpated",
+    "role": "Role",
+    "notApplicable": "N/A",
+    "dragAndDrop": "Drag and drop",
+    "home": "Home",
+    "createdBy": "Created by",
+    "createdAt": "Created at",
+    "sandbox": "Sandbox",
+    "path": "Path",
+    "locales": {
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French"
+    },
+    "layouts": {
+      "sidebar": "Sidebar",
+      "stacked": "Stacked"
+    },
+    "storage": {
+      "gb": "GB"
+    },
+    "fakeLoading": "Fake loading (sandbox)",
+    "onlyFileTypes": "Only {{0}} files",
+    "missingFields": "Missing fields",
+    "goTo": "Go to",
+    "slug": "Slug",
+    "admin": "Admin",
+    "member": "Member",
+    "max": "Max",
+    "monthly": "Monthly",
+    "sync": "Sync",
+    "invalid": "Invalid",
+    "noRecords": "There are no records",
+    "select": "Select",
+    "undefined": "Undefined",
+    "details": "Details",
+    "rows": "Rows",
+    "showing": "Showing",
+    "from": "From",
+    "to": "To",
+    "of": "Of",
+    "results": "Results",
+    "tryDemo": "Try demo",
+    "learnMore": "Learn more",
+    "readDocs": "Read docs"
+  },
+  "front": {
+    "navbar": {
+      "product": "Product",
+      "pricing": "Pricing",
+      "contact": "Contact",
+      "blog": "Blog",
+      "terms": "Terms and Conditions",
+      "privacy": "Privacy Policy",
+      "about": "About"
+    },
+    "hero": {
+      "headline1": "Easily build your own SaaS",
+      "headline2": "Multi-tenant framework with out-of-the-box SaaS features",
+      "headline3": "Authentication, Subscriptions, Blogging, Audit trails, Admin portal, App portal, Entity Builder, Subscription Plan Builder, and more.",
+      "subheadline1": "Launch your MVP sooner",
+      "hint": "This site uses v0.2.6",
+      "buy": "Get pre-launch price",
+      "features": "Features",
+      "docs": "Documentation",
+      "components": "Components",
+      "blog": "Blog",
+      "contact": "Contact us",
+      "startHint": "This demo is hosted on Vercel + Supabase.",
+      "prelaunch": "Pre-launch access 🚀",
+      "cta": "Get pre-launch price",
+      "repo": "private repository members"
+    },
+    "pricing": {
+      "title": "Pricing (demo)",
+      "headline": "Plans designed for organizations of all sizes."
+    },
+    "newsletter": {
+      "title": "Stay up to date",
+      "headline": "Subscribe to the newsletter to get product updates",
+      "email": "Enter your email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing",
+      "subscribed": "You're subscribed!",
+      "checkEmail": "Subscribed! Check your email to confirm your subscription."
+    },
+    "contact": {
+      "title": "Contact us",
+      "headline": "We'd love to know how we can add value to your company",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "organization": "Organization",
+      "email": "Email",
+      "send": "Send",
+      "users": "Number of users",
+      "comments": "Questions or comments",
+      "setup": "Update the .env variable INTEGRATIONS_CONTACT_FORMSPREE"
+    },
+    "changelog": {
+      "title": "Changelog",
+      "headline": "Stay up to date with the latest features and bug fixes."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "headline": "Add your own questions and answers to help your users understand your SaaS.",
+      "questions": {
+        "q1": "Sample question 1?",
+        "a1": "Answer 1.",
+        "q2": "Sample question 2?",
+        "a2": "Answer 2.",
+        "q3": "Sample question 3?",
+        "a3": "Answer 3.",
+        "q4": "Sample question 4?",
+        "a4": "Answer 4.",
+        "q5": "Sample question 5?",
+        "a5": "Answer 5.",
+        "q6": "Sample question 6?",
+        "a6": "Answer 7."
+      }
+    },
+    "footer": {
+      "copyright": "2021, All rights reserved."
+    },
+    "terms": {
+      "title": "Terms and Conditions"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
+    "joinNow": {
+      "title": "Download this template",
+      "headline": "Start building your own SaaS application. Or learn how it's done in React, React, React and Svelte.",
+      "cta": "Get codebase!"
+    },
+    "features": {
+      "frontend": {
+        "hint": "React + Tailwind CSS",
+        "title": "Frontend Features",
+        "headline": "Everything you need get started building a complete SaaS application.",
+        "components": {
+          "title": "Components",
+          "description": "Buttons, Links, Breadcrumbs, Modals, Image/Document Uploaders, Banners and more.",
+          "viewAll": "View all components."
+        },
+        "routes": {
+          "title": "SaaS pages/routes/views",
+          "front": "Front",
+          "frontPages": "(Landing, Pricing...)",
+          "account": "Account",
+          "accountPages": "(Login, Register...)",
+          "admin": "Admin",
+          "adminPages": "(Organizations, Users...)",
+          "core": "Core",
+          "corePages": "(Dashboard, Settings...)",
+          "app": "and Sample app",
+          "appPages": "(Contracts, Employees...)",
+          "views": "views.",
+          "viewAll": "Explore all views."
+        },
+        "i18n": {
+          "title": "i18n",
+          "description": "Localize your app, comes with English and Spanish locale keys. Recommended extension: "
+        },
+        "store": {
+          "title": "Persisted Store",
+          "description": "Modular persisted store to remember your users previous state."
+        },
+        "tailwindcss": {
+          "title": "Tailwind CSS",
+          "description": "Improve the current design with your own design skills. Comes with a custom theme color and "
+        },
+        "classComponents": {
+          "title": "React Hooks",
+          "description": "Functional components + React Hooks."
+        },
+        "fakeApi": {
+          "title": "Fake API (sandbox env)",
+          "description": "Love the design-first approach? Just set your environment to sandbox and call fake API implementations."
+        },
+        "eslint": {
+          "title": "ESLint",
+          "description": "Lint your code with your own rules, using"
+        }
+      },
+      "backend": {
+        "hint": "Remix",
+        "title": "Backend Features",
+        "description": "Multi-organizations/tenants, clean architecture, integration tests, Stripe subscriptions and Postmark Emails.",
+        "features": {
+          "net": {
+            "title": "Remix",
+            "description": "Web API built on top of Microsoft's framework, .NET."
+          },
+          "cleanArchitecture": {
+            "title": "Clean Architecture",
+            "description": "Solution split the project into multiple 'layers': Domain, Application, Infrastructre, Tests and ClientApp (frontend)."
+          },
+          "tests": {
+            "title": "Integration Tests",
+            "description": "Almost every controller method has its own integration test."
+          },
+          "multiTenant": {
+            "title": "Multi-tenant/organization",
+            "description": "Designed to have tenants per account/subscription."
+          },
+          "memberManagement": {
+            "title": "Member management",
+            "description": "Invite users as Owner, Admin, or Member. Or add your custom roles."
+          },
+          "stripe": {
+            "title": "Stripe Subscriptions",
+            "description": "Configure your plans and pricing the way it makes sense for your SaaS.",
+            "setup": "Click here to setup."
+          },
+          "postmark": {
+            "title": "Postmark Emails",
+            "description": "Setup your custom email tempaltes with Postmark.",
+            "setup": "Click here to setup."
+          },
+          "ef": {
+            "title": "Entity Framework",
+            "description": "EF Core supported databases. Current implementation: PostgreSql."
+          }
+        }
+      }
+    }
+  },
+  "pricing": {
+    "startTrial": "Start {{0}}-day trial",
+    "subscribe": "Subscribe",
+    "pay": "Pay",
+    "payOnce": "Pay once",
+    "seat": "Seat",
+    "seats": "Seats",
+    "signUpFree": "Sign up free",
+    "monthlyPrice": "Monthly price",
+    "yearlyPrice": "Yearly price",
+    "MONTHLY": "Monthly",
+    "YEARLY": "Yearly",
+    "MONTHLYShort": "month",
+    "YEARLYShort": "year",
+    "once": "Once",
+    "contactUs": "Contact us",
+    "contact": "Contact",
+    "customPlanDescription": "We'll make a plan based on your needs",
+    "whatsIncluded": "What's included",
+    "included": "Included",
+    "notIncluded": "Not included",
+    "recommended": "Recommended",
+    "FLAT_RATE": "Flat rate",
+    "PER_SEAT": "Per seat",
+    "USAGE_BASED": "Usage-based",
+    "demo": "DEMO PAGE - You'd customize this page",
+    "custom": {
+      "title": "Custom Plan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+    },
+    "products": {
+      "plan1": {
+        "title": "Free",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+      },
+      "plan2": {
+        "title": "Standard",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+      },
+      "plan3": {
+        "title": "Enterprise",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+      }
+    },
+    "features": {
+      "maxUsers": "{{0}} user(s)",
+      "prioritySupport": "Priority support",
+      "maxContracts": "{{0}} contracts/month"
+    }
+  },
+  "app": {
+    "shared": {
+      "buttons": {
+        "openOptions": "Open options",
+        "uploadDocument": "Upload"
+      },
+      "tabs": {
+        "select": "Select a tab"
+      },
+      "colors": {
+        "SLATE": "Blue gray",
+        "GRAY": "Gray",
+        "RED": "Red",
+        "ORANGE": "Orange",
+        "AMBER": "Amber",
+        "YELLOW": "Yellow",
+        "LIME": "Lime",
+        "GREEN": "Green",
+        "EMERALD": "Emerald",
+        "TEAL": "Teal",
+        "CYAN": "Cyan",
+        "SKY": "Light blue",
+        "BLUE": "Blue",
+        "INDIGO": "Indigo",
+        "VIOLET": "Violet",
+        "PURPLE": "Purple",
+        "PINK": "Pink",
+        "ROSE": "Rose"
+      },
+      "activity": {
+        "title": "Activity"
+      },
+      "periods": {
+        "ALL": "All",
+        "YEAR": "Year",
+        "MONTH": "Month",
+        "WEEK": "Week",
+        "DAY": "Today",
+        "LAST_YEAR": "Last year",
+        "LAST_MONTH": "Last month",
+        "LAST_WEEK": "Last week",
+        "LAST_DAY": "Yesterday",
+        "LAST_30_DAYS": "Last 30 days",
+        "LAST_7_DAYS": "Last 7 days",
+        "ALL_Description": "All",
+        "YEAR_Description": "This year",
+        "MONTH_Description": "This month",
+        "WEEK_Description": "This week",
+        "DAY_Description": "Today",
+        "LAST_YEAR_Description": "Last year",
+        "LAST_MONTH_Description": "Last month",
+        "LAST_WEEK_Description": "Last week",
+        "LAST_DAY_Description": "Yesterday",
+        "LAST_30_DAYS_Description": "In the last 30 days",
+        "LAST_7_DAYS_Description": "In the last 7 days"
+      },
+      "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "bimonthly": {
+        "1": "January-February",
+        "2": "March-April",
+        "3": "May-June",
+        "4": "July-August",
+        "5": "September-October",
+        "6": "November-December"
+      },
+      "quarterly": {
+        "1": "January-April",
+        "2": "May-August",
+        "3": "September-December"
+      },
+      "yearly": {
+        "1": "January-December"
+      },
+      "periodicity": {
+        "0": "Once",
+        "1": "Monthly",
+        "2": "Bimonthly",
+        "3": "Quarterly",
+        "4": "Yearly",
+        "ONCE": "Once",
+        "MONTHLY": "Monthly",
+        "BIMONTHLY": "Bimonthly",
+        "QUARTERLY": "Quarterly",
+        "YEARLY": "Yearly"
+      }
+    },
+    "commands": {
+      "type": "Type or search a command",
+      "empty": {
+        "title": "No commands found",
+        "description": "No commands found for this search term. Please try again."
+      },
+      "tenants": {
+        "title": "Accounts",
+        "description": "Switch between accounts, or create one",
+        "switchTo": "Switch to",
+        "create": "Create account",
+        "viewAll": "View all my accounts",
+        "edit": "Edit account name, slug and icon"
+      },
+      "profile": {
+        "title": "Profile",
+        "description": "Update your profile or log out",
+        "update": "Update profile",
+        "updateDescription": "Update your name, avatar, password, and/or preferences",
+        "logout": "Log out",
+        "logoutDescription": "Log out and go back to /login"
+      },
+      "blog": {
+        "title": "Write blog post",
+        "description": "Blogging"
+      }
+    },
+    "navbar": {
+      "tenant": "Account",
+      "subscription": "Subscription",
+      "profile": "Profile",
+      "settings": "Settings",
+      "signOut": "Sign out",
+      "members": "Members"
+    },
+    "sidebar": {
+      "app": "App",
+      "admin": "Admin",
+      "dashboard": "Dashboard",
+      "settings": "Settings",
+      "logs": "Logs",
+      "setup": "Set up"
+    },
+    "subscription": {
+      "limits": {
+        "title": "Limits",
+        "description": "Select a subscription plan according to your needs"
+      },
+      "features": {
+        "title": "My features and limits",
+        "description": "Features included in your subscription"
+      },
+      "invoices": {
+        "title": "Invoices",
+        "description": "Download your invoices"
+      },
+      "errors": {
+        "limitReached": "Limit reached",
+        "limitReachedLinkedAccounts": "You have reached the linked accounts limit ({{0}}), upgrade your subscription.",
+        "limitReachedUsers": "You have reached the members limit, upgrade your subscription.",
+        "limitReachedContracts": "You have reached the contracts limit ({{0}}), upgrade your subscription."
+      }
+    },
+    "users": {
+      "selectAtLeastOne": "Select at least one user",
+      "select": "Select users",
+      "empty": "There are no users",
+      "logs": {
+        "empty": "There are no user events"
+      }
+    },
+    "dashboard": {
+      "summary": "Summary"
+    },
+    "contracts": {
+      "title": "Contracts",
+      "new": {
+        "title": "New contract",
+        "description": "Create a contract...",
+        "addSignatories": "Add signatories...",
+        "save": "Create and request signatures"
+      },
+      "details": {
+        "general": "General information"
+      },
+      "employees": {},
+      "signatory": "Signatory",
+      "signatories": "Signatories",
+      "spectator": "Spectator",
+      "status": {
+        "PENDING": "Pending",
+        "SIGNED": "Signed",
+        "ARCHIVED": "Archived"
+      },
+      "pending": {
+        "title": "Pending"
+      },
+      "signed": {
+        "title": "Signed"
+      },
+      "archived": {
+        "title": "Archived"
+      },
+      "members": {
+        "add": "Add signatories",
+        "select": "Select users who will sign the contract"
+      },
+      "sign": {},
+      "actions": {
+        "create": "Create contract?",
+        "createDescription": "Every member will get a copy via email.",
+        "selectSignatoryOrSpectator": "Select signatories and viewers"
+      },
+      "placeholders": {
+        "name": "Contract name",
+        "description": "Large contract description",
+        "signatoryEmail": "signatory{'@'}company.com",
+        "spectatorEmail": "spectator{'@'}company.com"
+      },
+      "activity": {
+        "types": {
+          "CREATED": "Created contract",
+          "UPDATED": "Updated contract"
+        }
+      },
+      "errors": {
+        "maxFileReached": "Upload a document smaller than 20MB. Remember that no physical signature is required.",
+        "noContracts": "There are no contracts",
+        "nameRequired": "Name required.",
+        "descriptionRequired": "Description required.",
+        "fileRequired": "File required.",
+        "linkedAccountRequired": "Select a linked account (client or provider).",
+        "atLeastNSignatories": "Add at least 2 signatories."
+      }
+    },
+    "employees": {
+      "my": "My employees",
+      "new": {
+        "multiple": "Add employees",
+        "title": "Add employee"
+      },
+      "addendum": {},
+      "lists": {},
+      "actions": {
+        "add": "Add employee",
+        "import": "Import employees",
+        "select": "Select the employees that will work on this contract",
+        "selectEmployees": "Select employees",
+        "uploadCsv": "Upload a CSV file with columns:",
+        "uploadCsvColumns": "Name, Last name and Email",
+        "uploadCsvTemplate": "Template",
+        "onlyCsv": "Only .CSV documents"
+      },
+      "profile": {
+        "general": "General information",
+        "title": "Profile"
+      },
+      "errors": {
+        "notDefined": "There are no employees"
+      }
+    },
+    "linkedAccounts": {
+      "my": "Linked Accounts",
+      "profile": {
+        "title": "Profile",
+        "company": "Company profile",
+        "general": "General information"
+      },
+      "pending": {
+        "title": "Pending",
+        "one": "Pending invitation",
+        "multiple": "Pending invitations",
+        "description": "Manage your pending invitations.",
+        "invitationSent": "Invitation sent",
+        "invitationSentDescription": "An email has been sent to {{0}} for creating an account and to accept your invitation.",
+        "empty": "No pending invitations"
+      },
+      "rejected": {},
+      "empty": "You don't have any linked accounts",
+      "imTheProvider": "I'm the provider",
+      "newProvider": "New provider",
+      "newClient": "New client",
+      "new": "New account link",
+      "newDescription": "Link with another organization to share contracts with them",
+      "link": "Link with another account",
+      "invited": "You have invited {{0}} to join as {{1}} on your company {{2}}.",
+      "thereAreNo": "No active linked accounts",
+      "accountFound": "Account found",
+      "accountNotFound": "Account not found",
+      "invitation": {
+        "toBe": "Invitation to be a",
+        "hasInvitedYou": "has invited you to create a account link between their organization",
+        "andYourCompany": "and your organization",
+        "reasonAsProvider": "to share contracts",
+        "reasonAsClient": "to share contracts",
+        "message": "Message from",
+        "hasSentYou": "has sent you and invitation",
+        "userNotRegistered": "User {{0}} is not registered.",
+        "confirmReject": "Reject invitation?",
+        "rejectWarning": "Reject invitation as {{0}} from {{1}}.",
+        "confirmAccept": "Accept invitation as {{0}}?",
+        "acceptWarning": "Accept invitatiom from {{0}}.",
+        "invite": "Invite user to join.",
+        "notFound": "User {{0}} does not have organization '{{1}}'.",
+        "cannotInviteSelf": "You cannot invite yourself",
+        "cannotInviteCurrentTenant": "You cannot invite the current organization",
+        "inviteOwnersOrAdmins": "You can only invite owners or admins",
+        "existing": "There's an existing link with this organization"
+      },
+      "actions": {
+        "selectOne": "Select a client or provider",
+        "new": "New account link",
+        "edit": "Edit account link"
+      }
+    },
+    "providers": {
+      "empty": "You don't have any providers",
+      "new": {
+        "title": "New provider",
+        "description": "Add a new provider",
+        "add": "Add provider?"
+      }
+    },
+    "clients": {
+      "empty": "You don't have any clients",
+      "new": {
+        "title": "New client",
+        "description": "Add a new client",
+        "add": "Add client?"
+      }
+    },
+    "tenants": {
+      "empty": "There are no accounts",
+      "select": "Select account",
+      "youBelongToOne": "You belong to one account",
+      "youBelongToMany": "You belong to {{0}} accounts",
+      "create": {
+        "title": "Create account",
+        "headline": "You will be the owner"
+      },
+      "members": {
+        "noMembers": "No members found",
+        "noMembersFoundIn": "No members found",
+        "invitationSent": "Invitation sent",
+        "invitationDescription": "An invitation has been sent to {{0}} as {{1}}."
+      },
+      "subscription": {
+        "plan": "Plan",
+        "price": "Price",
+        "starts": "Starts",
+        "ends": "Ends",
+        "isTrial": "Is trial",
+        "status": "Status",
+        "members": "Members",
+        "linkedAccounts": "Linked accounts",
+        "storage": "Storage"
+      },
+      "actions": {
+        "deleted": "Organization deleted."
+      }
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "switchToApp": "Switch to app",
+    "switchToAdmin": "Switch to admin",
+    "pricing": {
+      "title": "Pricing Plans",
+      "new": "New pricing plan",
+      "edit": "Edit pricing plan",
+      "i18n": "i18n translation",
+      "thesePricesAreFromFiles": "These prices are not in the database, they're loaded from: src/application/pricing/plans.server.ts.",
+      "noPricesInDatabase": "There are no prices. Log in as admin and configure plans and prices.",
+      "noPricesConfigured": "There are no prices.",
+      "generateFromFiles": "Click here to create them."
+    },
+    "tenants": {
+      "title": "Tenants",
+      "overview": "Overview",
+      "profile": {
+        "title": "Profile"
+      },
+      "subscription": {
+        "title": "Subscription"
+      }
+    },
+    "users": {
+      "deleteWarning": "WARNING: If the user it's a organization owner, the subscription will be cancelled and the organization will be deleted. You cannot undo this action."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "menu": "Menu",
+      "url": "URL",
+      "icon": "Icon",
+      "sysadmin": "Sysadmin"
+    },
+    "components": {
+      "title": "Components",
+      "headline": "Some components used in the application"
+    },
+    "setup": {
+      "title": "Set up",
+      "headline": "Set up your application",
+      "description": "Generate your pricing plans and create your email templates"
+    },
+    "emails": {
+      "title": "Email Templates",
+      "name": "Name",
+      "alias": "Alias",
+      "subject": "Subject",
+      "created": "Created",
+      "createAll": "Create all",
+      "noEmails": "No email templates",
+      "noEmailsDescription": "Set them up at app/application/emails folder and set the POSTMARK_SERVER_TOKEN value.",
+      "sendTest": "Send test",
+      "notSaved": "These email templates are not saved, they're loaded from: app/application/emails.",
+      "generateFromFiles": "Click here to create them"
+    }
+  },
+  "account": {
+    "shared": {
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Log in",
+      "signUp": "Sign up",
+      "name": "Name",
+      "fullName": "Full name"
+    },
+    "login": {
+      "title": "Sign in to your account",
+      "button": "Log in",
+      "orStartTrial": "start free today!",
+      "forgot": "Forgot your password?",
+      "createTestAccount": "Create a test account.",
+      "useTestAccount": "Or use the following credentials:",
+      "errors": {
+        "passwordMissmatch": "Password don't match"
+      }
+    },
+    "register": {
+      "title": "Create your account",
+      "successTitle": "Registration success",
+      "successText": "You have successfully registered, please check your email to verify your account (check spam or promotions folder).",
+      "startTrial": "Start {{0}} day trial",
+      "confirmPassword": "Confirm password",
+      "clickHereToLogin": "Click here to login",
+      "personalInfo": "Personal info",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "organization": "Organization",
+      "invalidCoupon": "Invalid coupon",
+      "termsAndConditions": "terms and conditions",
+      "privacyPolicy": "privacy policy",
+      "alreadyRegistered": "Already registered?",
+      "bySigningUp": "By signing up, you agree to our",
+      "andOur": "and our",
+      "acceptTerms": "I agree to the terms and conditions",
+      "prompts": {
+        "register": {
+          "title": "Create account",
+          "description": "You will register with the {{0}} plan."
+        }
+      },
+      "errors": {
+        "priceNotInDatabase": "Plan selected but not in database",
+        "priceNotSelected": "Please select a plan",
+        "acceptTermsAndConditions": "In order to create an account you need to accept the terms and conditions."
+      },
+      "password": "Password"
+    },
+    "reset": {
+      "title": "Reset password",
+      "headline": "Enter your email and we will send you a link to reset your password",
+      "button": "Reset password",
+      "resetSuccess": "Password reset",
+      "emailSent": "Check your email to reset your password, including the SMAP and promotions folders."
+    },
+    "newPassword": {
+      "title": "Set up a new password",
+      "button": "Update password"
+    },
+    "forgot": {
+      "title": "Forgot password",
+      "rememberedPassword": "Remebered your password?",
+      "backToLogin": "Back to login",
+      "enterPassword": "Enter your password to login"
+    },
+    "join": {
+      "title": "Request to join"
+    },
+    "invitation": {
+      "title": "Invitation",
+      "youWereInvited": "you were invited to join",
+      "requestAccess": "Request access to join",
+      "button": "Accept and continue",
+      "anotherEmail": "Click here to logout to join with another user",
+      "successTitle": "Access request sent!",
+      "successText": "Your access request has been sent to the admin, if it's accepted you will receive a welcome email (make sure to check spam or promotions folder)",
+      "acceptedUser": "👋 Welcome to {{0}}"
+    },
+    "verify": {
+      "title": "Verify your account",
+      "button": "Verify and continue"
+    },
+    "tenant": {
+      "onlyAdmin": "Only admins or owners can perform this operation"
+    }
+  },
+  "models": {
+    "entity": {
+      "object": "Entity",
+      "plural": "Entities",
+      "name": "Name",
+      "slug": "Slug",
+      "order": "Order",
+      "prefix": "Prefix",
+      "title": "Title",
+      "titlePlural": "Plural",
+      "properties": "Properties",
+      "isFeature": "Is Plan Feature",
+      "isAutogenerated": "Autogenerate Views",
+      "hasApi": "Has API",
+      "requiresLinkedAccounts": "Requires linked accounts",
+      "icon": "Icon",
+      "active": "Active",
+      "rows": "Rows",
+      "limits": "Limits",
+      "permissions": "Permissions",
+      "features": "Features"
+    },
+    "property": {
+      "object": "Property",
+      "plural": "Properties",
+      "isDynamic": "Is dynamic field",
+      "order": "Order",
+      "name": "Name",
+      "title": "Title",
+      "type": "Type",
+      "formula": "Formula",
+      "parent": "Parent property",
+      "isDefault": "Is default",
+      "isRequired": "Is required",
+      "isHidden": "Is hidden",
+      "isDetail": "Is detail",
+      "pattern": "Pattern",
+      "options": "Options",
+      "children": "Children",
+      "values": "Values"
+    },
+    "row": {
+      "folio": "Folio"
+    },
+    "post": {
+      "object": "Blog Post",
+      "plural": "Blog Posts",
+      "slug": "Slug",
+      "title": "Title",
+      "description": "Description",
+      "date": "Date",
+      "image": "Cover image",
+      "content": "Content",
+      "markdown": "Markdown Sintax",
+      "readingTime": "Reading time",
+      "published": "Published",
+      "author": "Author",
+      "category": "Category",
+      "tags": "Tags"
+    },
+    "tenant": {
+      "object": "Tenant",
+      "plural": "Tenants",
+      "subscription": "Subscription"
+    },
+    "apiKey": {
+      "object": "API Key",
+      "plural": "API Keys",
+      "key": "Key",
+      "alias": "Alias",
+      "usage": "Usage",
+      "max": "Max",
+      "create": "Create",
+      "read": "Read",
+      "update": "Update",
+      "delete": "Delete",
+      "active": "Active",
+      "expires": "Expiration date",
+      "logs": "Logs"
+    },
+    "apiKeyLog": {
+      "object": "API Key Log",
+      "plural": "API Key Logs",
+      "method": "Method",
+      "params": "Params",
+      "body": "Body",
+      "ip": "IP",
+      "endpoint": "Endpoint",
+      "status": "Status",
+      "error": "Error"
+    },
+    "user": {
+      "object": "User",
+      "plural": "Users",
+      "email": "Email",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "role": "Role",
+      "tenants": "Tenants",
+      "impersonate": "Impersonate"
+    },
+    "log": {
+      "object": "Audit Trail",
+      "plural": "Audit Trails",
+      "action": "Action",
+      "details": "Details",
+      "url": "URL",
+      "method": "Method"
+    },
+    "subscriptionProduct": {
+      "object": "Subscription",
+      "plural": "Subscriptions",
+      "serviceId": "Stripe ID",
+      "order": "Order",
+      "title": "Title",
+      "description": "Description",
+      "model": "Pricing model",
+      "public": "Public",
+      "badge": "Badge",
+      "status": "Status",
+      "custom": "Custom plan"
+    },
+    "subscriptionFeature": {
+      "object": "Feature",
+      "plural": "Features",
+      "order": "Order",
+      "title": "Title",
+      "name": "Name",
+      "type": "Type",
+      "value": "Value"
+    },
+    "contract": {
+      "object": "Contract",
+      "plural": "Contracts",
+      "name": "Nombre",
+      "description": "Description",
+      "file": "PDF File",
+      "status": "Status",
+      "members": "Members",
+      "activity": "Activity"
+    },
+    "employee": {
+      "object": "Employee",
+      "plural": "Employees",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "fullName": "Full name"
+    },
+    "linkedAccount": {
+      "object": "Linked Account",
+      "plural": "Linked Accounts",
+      "type": "Type"
+    },
+    "provider": {
+      "object": "Provider",
+      "plural": "Providers"
+    },
+    "client": {
+      "object": "Client",
+      "plural": "Clients"
+    }
+  },
+  "settings": {
+    "profile": {
+      "profileTitle": "Profile",
+      "profileText": "Change your user profile",
+      "securityTitle": "Security",
+      "name": "Name",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "type": "Tenant Role",
+      "types": {
+        "OWNER": "Owner",
+        "ADMIN": "Admin",
+        "MEMBER": "Member"
+      },
+      "permissions": {
+        "OWNER": "Controls the account, its subscription and its users",
+        "ADMIN": "Manages subscription and users",
+        "MEMBER": "Creates and signs contracts"
+      },
+      "status": {
+        "PENDING_INVITATION": "Pending Invitation",
+        "PENDING_ACCEPTANCE": "Pending Acceptance",
+        "ACTIVE": "Active",
+        "INACTIVE": "Inactive"
+      },
+      "password": "Password",
+      "passwordConfirm": "Confirm password",
+      "passwordCurrent": "Current password",
+      "profileUpdated": "Profile saved",
+      "changePassword": "Change password",
+      "cannotChangePassword": "You signed up without a password, so you don't have one",
+      "errors": {
+        "cannotDeleteAdmin": "You cannot delete a system admin"
+      }
+    },
+    "preferences": {
+      "title": "Preferences",
+      "description": "Change your preferences",
+      "language": "Language",
+      "layouts": "Layouts"
+    },
+    "danger": {
+      "title": "Danger zone",
+      "description": "Be careful",
+      "deleteAccount": "Delete account",
+      "confirmDelete": "We will delete your account and all your organizations",
+      "confirmDeleteTenant": "Tenant will be deleted with all its data",
+      "deleteYourAccount": "Delete your account",
+      "onceYouDelete": "Once you delete your account, you will lose all data associated with it"
+    },
+    "tenant": {
+      "title": "Account",
+      "general": "General settings",
+      "generalDescription": "Update your account settings",
+      "updated": "Organization updated",
+      "create": "Create new organization",
+      "createDescription": "Create a new organization to separate data",
+      "createConfirm": "Create new organization?",
+      "payment": {
+        "title": "Payment details",
+        "ending": "ending in",
+        "updated": "Payment details updated",
+        "notSet": "No payment method set, please add a credit or debit card"
+      }
+    },
+    "subscription": {
+      "title": "Subscription",
+      "description": "Update your plan and payment details",
+      "noSubscription": "No active subscription",
+      "notSubscribed": "You don't have any active subscription",
+      "notSubscribedDescription": "Please select a plan according to your needs",
+      "updated": "Subscription updated",
+      "alreadySubscribed": "You're already subscribed",
+      "clickCancel": "Click here to cancel",
+      "confirmCancel": "Are you sure you want to cancel your subscription?",
+      "canceled": "Subscription canceled",
+      "current": "Current subscription:",
+      "noActivePlan": "You don't have an active plan",
+      "clickHereToSubscribe": "Click here to subscribe",
+      "trial": {
+        "ends": "Trial ends"
+      },
+      "plans": {
+        "select": "Select a plan"
+      },
+      "errors": {
+        "selectPlan": "Select a plan"
+      }
+    },
+    "members": {
+      "title": "Members",
+      "actions": {
+        "new": "Add member",
+        "edit": "Edit member"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "headline": "Read the latest articles about the Remix SaaS boilerplate.",
+    "published": "Published",
+    "draft": "Draft",
+    "thisIsADraft": "This is a draft",
+    "write": "Write",
+    "publish": "Publish",
+    "saveAndPreview": "Save and Preview",
+    "new": "New blog post",
+    "edit": "Edit blog post",
+    "previewMarkdown": "Preview Markdown",
+    "errors": {
+      "authorRequired": "Author required",
+      "categoryRequired": "Category required"
+    }
+  },
+  "entities": {
+    "fields": {
+      "NUMBER": "Number",
+      "TEXT": "Text",
+      "DATE": "Date",
+      "USER": "User",
+      "ROLE": "Role",
+      "ENTITY": "Entity",
+      "ID": "ID",
+      "SELECT": "Select",
+      "FORMULA": "Formula",
+      "MEDIA": "Media",
+      "BOOLEAN": "Boolean"
+    },
+    "defaultFields": {
+      "USER": "Created by user",
+      "ROLE": "Created by role",
+      "ID": "ID"
+    },
+    "conditions": {
+      "EQUAL": "Equals",
+      "GREATER_THAN": "Greater than",
+      "EQUAL_OR_GREATER_THAN": "Equal or greater than",
+      "LESS_THAN": "Less than",
+      "EQUAL_OR_LESS_THAN": "Equal or less than",
+      "CONTAINS": "Contains"
+    },
+    "errors": {
+      "selectNeedsAtLeastOneOption": "Add at least one option for Select fields",
+      "selectOptionCannotBeEmpty": "Select options cannot be empty"
+    }
+  },
+  "api": {
+    "errors": {
+      "youDontBelong": "You don't belong to this organization",
+      "alreadyAdded": "Already added",
+      "invalidCoupon": "Invalid coupon",
+      "couponInactive": "Inactive coupon",
+      "couponMaxRedeems": "Coupon code limit has been reached",
+      "invalidStripeCustomerId": "Invalid Stripe customer ID",
+      "maxFileReached": "Max file size: 20 MB",
+      "notLinked": "You don't have access to this organization",
+      "canBeModifiedByCreator": "Can only be modified/deleted by the creator",
+      "cannotUpdateNotPending": "Cannot modify if not pending",
+      "cannotDeleteIfNotPending": "Cannot delete if not pending",
+      "nameCannotBeEmpty": "Name not specified",
+      "descriptionCannotBeEmpty": "Description not specified",
+      "fileCannotBeEmpty": "File cannot be empty",
+      "alreadyLinkedProvider": "This company is already your provider",
+      "alreadyLinkedClient": "This company is already your client",
+      "invalidSubscription": "Invalid subscription",
+      "noActiveSubscriptions": "No active recurring subscriptions",
+      "invalidCard": "Invalid card",
+      "existingUser": "User already in organization",
+      "maxNumberOfUsers": "Maximum limit of users reached",
+      "invalidPassword": "Invalid credentials",
+      "invitationNotAvailable": "Invitation not available",
+      "notAvailable": "Not available",
+      "cannotBeWithoutOwner": "Organization cannot be without owner",
+      "cannotBeWithoutMembers": "Organization cannot be without members",
+      "userNotRegistered": "User not registered",
+      "userAlreadyRegistered": "User already registered",
+      "userAlreadyVerified": "User already verified",
+      "passwordMismatch": "Passwords don't match",
+      "invalidEmail": "Invalid email",
+      "invalidLinkInvitation": "Invalid invitation",
+      "notPendingLinkInvitation": "Invalid invitation",
+      "emailInvalidLinkInvitation": "Invalid account link invitation email",
+      "tenantInvalidLinkInvitation": "Invalid organization in account link invitation",
+      "cannotDeleteAdmin": "You cannot delete a system admin",
+      "alreadyAMember": "Already a member",
+      "noChanges": "No changes",
+      "noSubscription": "No active subscription",
+      "noOrganizations": "You don't belong to any organization"
+    }
+  },
+  "demo": {
+    "cannotDelete": "Cannot delete on demo environment",
+    "cannotUpdate": "Cannot update on demo environment"
+  },
+  "docs": {
+    "title": "Docs"
+  }
+}

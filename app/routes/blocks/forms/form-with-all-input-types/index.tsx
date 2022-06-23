@@ -1,0 +1,135 @@
+import { useEffect, useRef, useState } from "react";
+import { LoaderFunction, json, MetaFunction, Form, useActionData, ActionFunction } from "remix";
+import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
+import InputCheckbox from "~/components/ui/input/InputCheckbox";
+import InputDate from "~/components/ui/input/InputDate";
+import InputNumber from "~/components/ui/input/InputNumber";
+import InputRadioGroup from "~/components/ui/input/InputRadioGroup";
+import InputSelector from "~/components/ui/input/InputSelector";
+import InputText from "~/components/ui/input/InputText";
+import ErrorModal, { RefErrorModal } from "~/components/ui/modals/ErrorModal";
+import SuccessModal, { RefSuccessModal } from "~/components/ui/modals/SuccessModal";
+
+type LoaderData = {
+  title: string;
+};
+export let loader: LoaderFunction = async () => {
+  const data: LoaderData = {
+    title: "Form with all input types | RemixBlocks",
+  };
+  return json(data);
+};
+
+type ActionData = { success?: string; error?: string };
+const success = (data: ActionData) => json(data, { status: 200 });
+const badRequest = (data: ActionData) => json(data, { status: 400 });
+export const action: ActionFunction = async ({ request }) => {
+  const form = await request.formData();
+
+  const text = form.get("text")?.toString();
+  const date = new Date(form.get("date")?.toString() ?? "");
+  const number = Number(form.get("number"));
+  const select = form.get("select")?.toString();
+  const radio = form.get("radio")?.toString();
+  const array = form.getAll("array[]")?.map((f) => f.toString()) ?? [];
+
+  if (array.length === 0) {
+    return badRequest({ error: "Select at least one tag" });
+  }
+
+  return success({
+    success: JSON.stringify({
+      text,
+      date,
+      number,
+      select,
+      radio,
+      array,
+    }),
+  });
+};
+
+export const meta: MetaFunction = ({ data }) => ({
+  title: data?.title,
+});
+
+const arrayOptions = ["Tag 1", "Tag 2", "Tag 3"];
+
+export default function Example() {
+  const actionData = useActionData<ActionData>();
+
+  const successModal = useRef<RefSuccessModal>(null);
+  const errorModal = useRef<RefErrorModal>(null);
+
+  const [selectedSelectOption, setSelectedSelectOption] = useState<string | undefined>("select-option-1");
+  const [selectedRadioOption, setSelectedRadioOption] = useState<string | undefined>("radio-option-2");
+  const [array, setArray] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (actionData?.error) {
+      errorModal.current?.show(actionData.error);
+    }
+    if (actionData?.success) {
+      successModal.current?.show("Form submitted", actionData.success);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [actionData]);
+
+  return (
+    <Form method="post" className="space-y-3">
+      <InputText name="text" title="Text" value="Sample" />
+      <InputNumber name="number" title="Number" value={12.5} step="0.01" />
+      <InputDate name="date" title="Date" value={new Date()} />
+      <InputSelector
+        name="select"
+        title="Select"
+        value={selectedSelectOption}
+        setValue={(e) => setSelectedSelectOption(e?.toString())}
+        options={[
+          { name: "Option 1", value: "select-option-1" },
+          { name: "Option 2", value: "select-option-2" },
+        ]}
+      />
+      <InputRadioGroup
+        name="radio"
+        title="Radio group"
+        value={selectedRadioOption}
+        setValue={(e) => setSelectedRadioOption(e?.toString())}
+        options={[
+          { name: "Option 1", value: "radio-option-1" },
+          { name: "Option 2", value: "radio-option-2" },
+        ]}
+      />
+
+      <div className="flex items-center space-x-4">
+        {array.map((item) => {
+          return <input key={item} hidden name="array[]" value={item} />;
+        })}
+        {arrayOptions.map((option, index) => {
+          return (
+            <InputCheckbox
+              key={index}
+              name=""
+              title={option}
+              value={array.includes(option)}
+              setValue={(e) => {
+                if (e) {
+                  setArray([...array, option]);
+                } else {
+                  setArray(array.filter((o) => o !== option));
+                }
+              }}
+            />
+          );
+        })}
+      </div>
+
+      <div className="flex justify-end">
+        <ButtonPrimary type="submit">Submit</ButtonPrimary>
+      </div>
+
+      <ErrorModal ref={errorModal} />
+      <SuccessModal ref={successModal} />
+    </Form>
+  );
+}

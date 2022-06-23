@@ -1,0 +1,21 @@
+node_modules
+
+.cache
+.env
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
+
+# Supabase
+**/supabase/.branches
+**/supabase/.temp
+**/supabase/.env
+
+prisma/dev.db
+.env
+.env.production
+
+.idea

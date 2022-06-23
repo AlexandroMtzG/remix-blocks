@@ -1,0 +1,36 @@
+---
+meta:
+  title: Uploaders | Components | RemixBlocks
+  description: RemixBlocks Upload File Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Uploaders",
+      routePath: "/components/uploaders",
+    },
+  ]}
+/>
+
+# Uploaders
+
+import PreviewUploadersDocument from "~/components/ui/uploaders/PreviewUploadersDocument";
+
+<PreviewUploadersDocument />
+
+```tsx
+import { FileBase64 } from "~/application/dtos/shared/FileBase64";
+
+export default function PreviewUploaders() {
+  function onDropped(base64: string, file: File) {
+    alert(`@onDropped: [${base64.substr(0, 30)}...], [name (${file.name}), size (${file.size})]`);
+  }
+  return <UploadDocuments multiple={true} onDropped={onDropped} />;
+}
+```

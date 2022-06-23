@@ -1,0 +1,52 @@
+---
+meta:
+  title: Buttons | Components | RemixBlocks
+  description: RemixBlocks Button Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Buttons",
+      routePath: "/components/buttons",
+    },
+  ]}
+/>
+
+# Buttons
+
+import PreviewButtons from "~/components/ui/buttons/PreviewButtons";
+import PreviewButtonsAsLinks from "~/components/ui/buttons/PreviewButtonsAsLinks";
+import PreviewButtonsDestructive from "~/components/ui/buttons/PreviewButtonsDestructive";
+import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
+
+### Buttons
+
+<PreviewButtons />
+
+```tsx
+<ButtonPrimary onClick={() => alert("Clicked")}>Primary</ButtonPrimary>
+```
+
+### Buttons - as Links
+
+<PreviewButtonsAsLinks />
+
+```tsx
+<ButtonPrimary to="/components/buttons">Primary</ButtonPrimary>
+```
+
+### Buttons - Destructive
+
+<PreviewButtonsDestructive />
+
+```tsx
+<ButtonPrimary destructive={true} onClick={() => alert("Clicked")}>
+  Primary
+</ButtonPrimary>
+```

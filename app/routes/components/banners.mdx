@@ -1,0 +1,56 @@
+---
+meta:
+  title: Banners | Components | RemixBlocks
+  description: RemixBlocks Banner Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Banners",
+      routePath: "/components/banners",
+    },
+  ]}
+/>
+
+# Banners
+
+import InfoBanner from "~/components/ui/banners/InfoBanner";
+import WarningBanner from "~/components/ui/banners/WarningBanner";
+
+### InfoBanner
+
+<InfoBanner title="Info" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+
+```tsx
+<InfoBanner title="Info" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+```
+
+### WarningBanner
+
+<WarningBanner title="Warning" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+
+```tsx
+<WarningBanner title="Warning" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+```
+
+### WarningBanner - with Redirect
+
+<WarningBanner
+  title="WarningBanner with Redirect"
+  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+  redirect="https://saasrock.com"
+/>
+
+```tsx
+<WarningBanner
+  title="WarningBanner with Redirect"
+  text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..."
+  redirect="https://saasrock.com"
+/>
+```

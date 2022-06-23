@@ -1,0 +1,144 @@
+---
+meta:
+  title: Select Input | Components | RemixBlocks
+  description: RemixBlocks Select Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Selector",
+      routePath: "/components/inputs/selector",
+    },
+  ]}
+/>
+
+# Select Input
+
+import PreviewInputSelect from "~/components/ui/input/previews/selector/PreviewInputSelect";
+
+### InputSelect - Native
+
+<PreviewInputSelect />
+
+```tsx
+<InputSelect
+  name="name"
+  title="Title"
+  options={[
+    {
+      name: "Option 1",
+      value: "1",
+    },
+    {
+      name: "Option 2",
+      value: "2",
+    },
+    {
+      name: "Option 3",
+      value: "3",
+      disabled: true,
+    },
+  ]}
+/>
+```
+
+import PreviewInputSelectWithState from "~/components/ui/input/previews/selector/PreviewInputSelectWithState";
+
+### InputSelect - Native with State
+
+<PreviewInputSelectWithState />
+
+```tsx
+import { useState } from "react";
+import InputSelect from "~/components/ui/input/InputSelect";
+
+type SelectType = string | number | undefined;
+export default function PreviewInputSelectWithState() {
+  const [value, setValue] = useState<SelectType>("2");
+  return (
+    <InputSelect
+      name="name"
+      title="Title"
+      options={[
+        {
+          name: "Option 1",
+          value: "1",
+        },
+        {
+          name: "Option 2",
+          value: "2",
+        },
+      ]}
+      value={value}
+      setValue={setValue}
+    />
+  );
+}
+```
+
+import PreviewInputSelector from "~/components/ui/input/previews/selector/PreviewInputSelector";
+
+### InputSelector - Custom Select
+
+<PreviewInputSelector />
+
+```tsx
+<InputSelector
+  name="name"
+  title="Title"
+  options={[
+    {
+      name: "Option 1",
+      value: "1",
+    },
+    {
+      name: "Option 2",
+      value: "2",
+    },
+  ]}
+/>
+```
+
+import PreviewInputSelectorWithState from "~/components/ui/input/previews/selector/PreviewInputSelectorWithState";
+
+### InputSelector - Custom Select with State
+
+<PreviewInputSelectorWithState />
+
+```tsx
+import { useState } from "react";
+import InputSelector from "~/components/ui/input/InputSelector";
+
+type SelectType = string | number | undefined;
+export default function PreviewInputSelectorWithState() {
+  const [value, setValue] = useState<SelectType>("2");
+  return (
+    <InputSelector
+      name="name"
+      title="Title"
+      options={[
+        {
+          name: "Option 1",
+          value: "1",
+        },
+        {
+          name: "Option 2",
+          value: "2",
+        },
+      ]}
+      value={value}
+      setValue={setValue}
+    />
+  );
+}
+```

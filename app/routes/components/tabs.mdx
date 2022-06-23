@@ -1,0 +1,83 @@
+---
+meta:
+  title: Tabs | Components | RemixBlocks
+  description: RemixBlocks Tabs Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Tabs",
+      routePath: "/components/tabs",
+    },
+  ]}
+/>
+
+# Tabs
+
+import PreviewTabsAsLinks from "~/components/ui/tabs/PreviewTabsAsLinks";
+
+### Tabs - as Links
+
+<PreviewTabsAsLinks />
+
+```tsx
+<Tabs
+  asLinks={true}
+  className="w-full sm:w-auto"
+  tabs={[
+    { name: "Home", routePath: "/components" },
+    {
+      name: "Components",
+      routePath: "/components/tabs",
+    },
+  ]}
+/>
+```
+
+import PreviewTabsAsButtons from "~/components/ui/tabs/PreviewTabsAsButtons";
+
+### Tabs - as Buttons
+
+<PreviewTabsAsButtons />
+
+```tsx
+<div className="space-y-2 w-full">
+  <Tabs
+    asLinks={false}
+    onSelected={(selected) => {
+      setSelectedTab(selected);
+    }}
+    className="w-full sm:w-auto"
+    tabs={[{ name: "Tab 1" }, { name: "Tab 2" }, { name: "Tab 3" }]}
+  />
+  <div className="p-2 bg-gray-100 border border-gray-300">
+    {selectedTab === 0 ? <div>Tab 1 Content...</div> : selectedTab === 1 ? <div>Tab 2 Content...</div> : <div>Tab 3 Content...</div>}
+  </div>
+</div>
+```
+
+import PreviewTabsVertical from "~/components/ui/tabs/PreviewTabsVertical";
+
+### Tabs - Vertical
+
+<PreviewTabsVertical />
+
+```tsx
+<TabsVertical
+  asLinks={true}
+  className="w-full sm:w-auto"
+  tabs={[
+    { name: "Home", routePath: "/components" },
+    {
+      name: "Components",
+      routePath: "/components/tabs",
+    },
+  ]}
+/>
+```

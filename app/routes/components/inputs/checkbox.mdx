@@ -1,0 +1,51 @@
+---
+meta:
+  title: Checkbox Input | Components | RemixBlocks
+  description: RemixBlocks Checkbox Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Checkbox",
+      routePath: "/components/inputs/checkbox",
+    },
+  ]}
+/>
+
+# Checkbox Input
+
+import PreviewInputCheckbox from "~/components/ui/input/previews/checkbox/PreviewInputCheckbox";
+
+### InputCheckbox
+
+<PreviewInputCheckbox />
+
+```tsx
+<InputCheckbox name="name" title="title" />
+```
+
+import PreviewInputCheckboxWithState from "~/components/ui/input/previews/checkbox/PreviewInputCheckboxWithState";
+
+### InputCheckbox - with State
+
+<PreviewInputCheckboxWithState />
+
+```tsx
+import { useState } from "react";
+import InputCheckbox from "~/components/ui/input/InputCheckbox";
+
+export default function PreviewInputCheckboxWithState() {
+  const [value, setValue] = useState(true);
+  return <InputCheckbox name="name" title="Title" value={value} setValue={setValue} />;
+}
+```

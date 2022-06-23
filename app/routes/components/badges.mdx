@@ -1,0 +1,40 @@
+---
+meta:
+  title: Badges | Components | RemixBlocks
+  description: RemixBlocks Badge Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Badges",
+      routePath: "/components/badges",
+    },
+  ]}
+/>
+
+# Badges
+
+import PreviewColorBadges from "~/components/ui/badges/PreviewColorBadges";
+import PreviewSimpleBadges from "~/components/ui/badges/PreviewSimpleBadges";
+
+### ColorBadge
+
+<PreviewColorBadges />
+
+```tsx
+<ColorBadge color={Colors.RED} />
+```
+
+### SimpleBadge
+
+<PreviewSimpleBadges />
+
+```tsx
+<SimpleBadge title={"RED"} color={Colors.RED} />
+```

@@ -1,0 +1,77 @@
+---
+meta:
+  title: Dropdown | Components | RemixBlocks
+  description: RemixBlocks Dropdown Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Dropdowns",
+      routePath: "/components/dropdowns",
+    },
+  ]}
+/>
+
+# Dropdown
+
+import PreviewDropdownsSimple from "~/components/ui/dropdowns/PreviewDropdownsSimple";
+
+### Dropdown - Simple
+
+<PreviewDropdownsSimple />
+
+```tsx
+<Dropdown
+  onClick={() => alert("Dropdown click")}
+  button={<div>Dropdown</div>}
+  options={
+    <div>
+      <button
+        type="button"
+        className="w-full text-left text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50 focus:outline-none"
+        tabIndex={-1}
+        onClick={() => alert("Clicked")}
+      >
+        <div>Button</div>
+      </button>
+      <Link to={currentRoute} className="w-full text-left text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50 focus:outline-none" tabIndex={-1}>
+        <div>Link</div>
+      </Link>
+    </div>
+  }
+></Dropdown>
+```
+
+import PreviewDropdownsWithClick from "~/components/ui/dropdowns/PreviewDropdownsWithClick";
+
+### Dropdown - with Click
+
+<PreviewDropdownsWithClick />
+
+```tsx
+<DropdownWithClick
+  onClick={() => alert("Dropdown click")}
+  button={<div>Dropdown with Click</div>}
+  options={
+    <div>
+      <button
+        type="button"
+        className="w-full text-left text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50 focus:outline-none"
+        tabIndex={-1}
+        onClick={() => alert("Clicked")}
+      >
+        <div>Button</div>
+      </button>
+      <Link to={currentRoute} className="w-full text-left text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50 focus:outline-none" tabIndex={-1}>
+        <div>Link</div>
+      </Link>
+    </div>
+  }
+/>
+```

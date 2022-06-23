@@ -1,0 +1,64 @@
+---
+meta:
+  title: Radio Group Input | Components | RemixBlocks
+  description: RemixBlocks Radio Group Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Radio Group",
+      routePath: "/components/inputs/radio-group",
+    },
+  ]}
+/>
+
+# Radio Group Input
+
+import PreviewInputRadioGroupWithState from "~/components/ui/input/previews/radio/PreviewInputRadioGroupWithState";
+
+### InputRadioGroup
+
+<PreviewInputRadioGroupWithState />
+
+```tsx
+import { useState } from "react";
+import InputRadioGroup from "~/components/ui/input/InputRadioGroup";
+
+type SelectType = string | number | undefined;
+export default function PreviewInputRadioGroupWithState() {
+  const [value, setValue] = useState<SelectType>(2);
+  return (
+    <InputRadioGroup
+      name="name"
+      title="Title"
+      options={[
+        {
+          name: "Option 1",
+          value: 1,
+        },
+        {
+          name: "Option 2",
+          value: 2,
+        },
+        {
+          name: "Option 3",
+          value: 3,
+          disabled: true,
+        },
+      ]}
+      value={value}
+      setValue={setValue}
+    />
+  );
+}
+```

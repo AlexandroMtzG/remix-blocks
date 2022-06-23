@@ -1,0 +1,32 @@
+---
+meta:
+  title: Modals | Components | RemixBlocks
+  description: RemixBlocks Modal Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Modals",
+      routePath: "/components/modals",
+    },
+  ]}
+/>
+
+# Modals
+
+import PreviewModals from "~/components/ui/modals/PreviewModals";
+
+<PreviewModals />
+
+```tsx
+<SuccessModal ref={successModal} onClosed={() => alert("Closed success modal")} />
+<ErrorModal ref={errorModal} onClosed={() => alert("Closed error modal")} />
+<ConfirmModal ref={confirmModal} onNo={() => alert("No")} onYes={onYes} />
+<Modal open={open} setOpen={setOpen}>Content here</Modal>
+```

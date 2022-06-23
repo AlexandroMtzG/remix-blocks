@@ -1,0 +1,126 @@
+import { useRef, useEffect, useState } from "react";
+import { ActionFunction, Form, json, LoaderFunction, MetaFunction, useActionData, useLoaderData, useTransition } from "remix";
+import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
+import InputText from "~/components/ui/input/InputText";
+
+type LoaderData = {
+  title: string;
+  convertKitApiKey: string;
+  convertKitFormId: string;
+};
+export let loader: LoaderFunction = async () => {
+  const data: LoaderData = {
+    title: "Newsletter with ConvertKit | RemixBlocks",
+    convertKitApiKey: process.env.CONVERTKIT_APIKEY?.toString() ?? "",
+    convertKitFormId: process.env.CONVERTKIT_FORM_ID?.toString() ?? "",
+  };
+  return json(data);
+};
+
+export const action: ActionFunction = async ({ request }) => {
+  const form = await request.formData();
+  const email = form.get("email");
+
+  const API_KEY = form.get("convertkit-api-key"); // process.env.CONVERTKIT_APIKEY;
+  const FORM_ID = form.get("convertkit-form-id"); // process.env.CONVERTKIT_FORM_ID;
+  const API = "https://api.convertkit.com/v3";
+
+  const res = await fetch(`${API}/forms/${FORM_ID}/subscribe`, {
+    method: "post",
+    body: JSON.stringify({ email, api_key: API_KEY }),
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+    },
+  });
+
+  return res.json();
+};
+
+export const meta: MetaFunction = ({ data }) => ({
+  title: data?.title,
+});
+
+export default function Example() {
+  const data = useLoaderData<LoaderData>();
+  const actionData = useActionData();
+  const transition = useTransition();
+  const state: "idle" | "success" | "error" | "submitting" = transition.submission
+    ? "submitting"
+    : actionData?.subscription
+    ? "success"
+    : actionData?.error
+    ? "error"
+    : "idle";
+
+  const inputRef = useRef<HTMLInputElement>(null);
+  const mounted = useRef<boolean>(false);
+
+  const [convertKitApiKey, setConvertKitApiKey] = useState(data.convertKitApiKey);
+  const [convertKitFormId, setConvertKitFormId] = useState(data.convertKitFormId);
+
+  useEffect(() => {
+    if (state === "error") {
+      inputRef.current?.focus();
+    }
+
+    if (state === "idle" && mounted.current) {
+      inputRef.current?.select();
+    }
+
+    mounted.current = true;
+  }, [state]);
+
+  return (
+    <Form replace method="post" aria-hidden={state === "success"} className="space-y-3">
+      {/* TODO: DELETE SET UP LINES - START */}
+      <InputText
+        name="convertkit-api-key"
+        title="Convert Kit API Key (we don't store this)"
+        value={convertKitApiKey}
+        setValue={setConvertKitApiKey}
+        required
+        autoComplete="off"
+        hint={
+          <a
+            className="underline italic text-theme-500 hover:text-theme-600"
+            href="https://app.convertkit.com/account_settings/advanced_settings"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get API Key
+          </a>
+        }
+      />
+      <InputText
+        name="convertkit-form-id"
+        title="Convert Kit Form ID (we don't store this)"
+        value={convertKitFormId}
+        setValue={setConvertKitFormId}
+        required
+        hint={
+          <div className="italic">
+            <a className="underline text-theme-500 hover:text-theme-600" href="https://app.convertkit.com/forms" target="_blank" rel="noreferrer">
+              Get form ID
+            </a>{" "}
+            <span className="text-xs">(by the URL)</span>
+          </div>
+        }
+      />
+      {/* TODO: DELETE SET UP LINES - END */}
+
+      <InputText type="email" name="email" title="Email" required className="sm:col-span-2" />
+      <div className="flex items-baseline justify-between space-x-2">
+        <div className="text-sm">
+          {state === "success" ? (
+            <p className="text-teal-500 text-sm py-2">Subscribed! Please check your email.</p>
+          ) : state === "error" ? (
+            <p className="text-red-500 text-sm py-2">{actionData.message}</p>
+          ) : null}
+        </div>
+        <ButtonPrimary type="submit" disabled={state === "submitting"}>
+          {state === "submitting" ? "Subscribing..." : "Subscribe"}
+        </ButtonPrimary>
+      </div>
+    </Form>
+  );
+}

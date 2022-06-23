@@ -1,0 +1,47 @@
+---
+meta:
+  title: Empty States | Components | RemixBlocks
+  description: RemixBlocks Empty States Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Empty States",
+      routePath: "/components/empty-states",
+    },
+  ]}
+/>
+
+# Empty State
+
+import EmptyState from "~/components/ui/emptyState/EmptyState";
+
+<EmptyState
+  className="bg-white"
+  onClick={() => alert("Clicked")}
+  captions={{
+    new: "Button",
+    thereAreNo: "There are no...",
+    description: "Description...",
+  }}
+  icon="plus"
+/>
+
+```tsx
+<EmptyState
+  className="bg-white"
+  onClick={() => alert("Clicked")}
+  captions={{
+    new: "Button",
+    thereAreNo: "There are no...",
+    description: "Description...",
+  }}
+  icon="plus"
+/>
+```

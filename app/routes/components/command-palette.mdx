@@ -1,0 +1,48 @@
+---
+meta:
+  title: Command Palette | Components | RemixBlocks
+  description: RemixBlocks Command Palette Component
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Command Palette",
+      routePath: "/components/command-palette",
+    },
+  ]}
+/>
+
+# Command Palettes
+
+import PreviewCommandPalettes from "~/components/ui/commandPalettes/PreviewCommandPalettes";
+
+### Command Palette
+
+<PreviewCommandPalettes />
+
+```tsx
+<CommandPalette
+  isOpen={open}
+  onClosed={() => setOpen(false)}
+  commands={[
+    {
+      command: "1",
+      title: "Title 1",
+      description: "Description #1",
+      onSelected: () => alert("Selected command #1"),
+    },
+    {
+      command: "2",
+      title: "Title 2",
+      description: "Description 2",
+      onSelected: () => alert("Selected command #2"),
+    },
+  ]}
+/>
+```

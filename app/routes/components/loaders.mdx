@@ -1,0 +1,43 @@
+---
+meta:
+  title: Loaders | Components | RemixBlocks
+  description: RemixBlocks Loader Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Loaders",
+      routePath: "/components/loaders",
+    },
+  ]}
+/>
+
+# Loaders
+
+import PreviewLoaders from "~/components/ui/loaders/PreviewLoaders";
+import Loading from "~/components/ui/loaders/Loading";
+
+### Loading
+
+<PreviewLoaders />
+
+```tsx
+<Loading />
+```
+
+import PreviewFloatingLoader from "~/components/ui/loaders/PreviewFloatingLoader";
+import FloatingLoader from "~/components/ui/loaders/FloatingLoader";
+
+### FloatingLoader
+
+<PreviewFloatingLoader />
+
+```tsx
+<FloatingLoader />
+```

@@ -1,0 +1,60 @@
+---
+meta:
+  title: Number Input | Components | RemixBlocks
+  description: RemixBlocks Number Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Number",
+      routePath: "/components/inputs/number",
+    },
+  ]}
+/>
+
+# Number Input
+
+import PreviewInputNumber from "~/components/ui/input/previews/number/PreviewInputNumber";
+
+### InputNumber
+
+<PreviewInputNumber />
+
+```tsx
+<InputNumber name="name" title="title" />
+```
+
+import PreviewInputNumberWithHintAndHelp from "~/components/ui/input/previews/number/PreviewInputNumberWithHintAndHelp";
+
+### InputNumber - with Hint and Help
+
+<PreviewInputNumberWithHintAndHelp />
+
+```tsx
+<InputNumber name="name" title="Title" hint={<span className="text-red-500">Hint text</span>} help={"Help text"} />
+```
+
+import PreviewInputNumberWithAllOptions from "~/components/ui/input/previews/number/PreviewInputNumberWithAllOptions";
+
+### InputNumber - with all Options
+
+<PreviewInputNumberWithAllOptions />
+
+```tsx
+import InputNumber from "~/components/ui/input/InputNumber";
+
+export default function PreviewInputNumberWithAllOptions() {
+  const [value, setValue] = useState(0);
+  return <InputNumber name="name" title="Title" value={value} setValue={setValue} min={0} max={10} required step="0.01" />;
+}
+```

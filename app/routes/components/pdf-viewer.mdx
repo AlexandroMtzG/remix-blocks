@@ -1,0 +1,30 @@
+---
+meta:
+  title: PDF Viewer | Components | RemixBlocks
+  description: RemixBlocks PDF Viewer Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "PDF Viewer",
+      routePath: "/components/pdf-viewer",
+    },
+  ]}
+/>
+
+# PDF Viewer
+
+import PreviewPdfViewers from "~/components/ui/pdf/PreviewPdfViewers";
+import PdfViewer from "~/components/ui/pdf/PdfViewer";
+
+<PreviewPdfViewers />
+
+```tsx
+<PdfViewer file={"data:application/pdf;base64,..."} />
+```

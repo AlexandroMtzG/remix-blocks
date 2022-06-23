@@ -1,0 +1,51 @@
+---
+meta:
+  title: Date Input | Components | RemixBlocks
+  description: RemixBlocks Date Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Date",
+      routePath: "/components/inputs/date",
+    },
+  ]}
+/>
+
+# Date Input
+
+import PreviewInputDate from "~/components/ui/input/previews/date/PreviewInputDate";
+
+### InputDate
+
+<PreviewInputDate />
+
+```tsx
+<InputDate name="name" title="title" />
+```
+
+import PreviewInputDateWithState from "~/components/ui/input/previews/date/PreviewInputDateWithState";
+
+### InputDate - with State
+
+<PreviewInputDateWithState />
+
+```tsx
+import { useState } from "react";
+import InputDate from "~/components/ui/input/InputDate";
+
+export default function PreviewInputDateWithState() {
+  const [value, setValue] = useState(new Date("1990-01-02"));
+  return <InputDate name="name" title="Title" value={value} onChange={(e) => setValue(e)} />;
+}
+```

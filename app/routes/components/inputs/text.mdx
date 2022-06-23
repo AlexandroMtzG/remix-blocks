@@ -1,0 +1,82 @@
+---
+meta:
+  title: Text Input | Components | RemixBlocks
+  description: RemixBlocks Text Input Components
+headers:
+  Cache-Control: no-cache
+---
+
+import BlocksBreadcrumb from "~/components/blocks/BlocksBreadcrumb";
+
+<BlocksBreadcrumb
+  items={[
+    { title: "Components", routePath: "/components" },
+    {
+      title: "Inputs",
+      routePath: "/components/inputs",
+    },
+    {
+      title: "Text",
+      routePath: "/components/inputs/text",
+    },
+  ]}
+/>
+
+# Text Input
+
+import PreviewInputText from "~/components/ui/input/previews/text/PreviewInputText";
+
+### InputText
+
+<PreviewInputText />
+
+```tsx
+<InputText name="name" title="title" />
+```
+
+import PreviewInputTextWithTranslation from "~/components/ui/input/previews/text/PreviewInputTextWithTranslation";
+
+### InputText - with Translation
+
+<PreviewInputTextWithTranslation />
+
+```tsx
+import { useState } from "react";
+import InputText from "~/components/ui/input/InputText";
+
+export default function PreviewInputTextWithTranslation() {
+  const [valid, setValid] = useState("shared.hi");
+  const [invalid, setInvalid] = useState("shared.invalid.i18n.key");
+  return (
+    <>
+      <InputText name="name" title="Valid i18n key" value={valid} setValue={setValid} withTranslation />
+      <InputText name="name" title="Invalid i18n key" value={invalid} setValue={setInvalid} withTranslation />
+    </>
+  );
+}
+```
+
+import PreviewInputTextWithHintAndHelp from "~/components/ui/input/previews/text/PreviewInputTextWithHintAndHelp";
+
+### InputText - with Hint
+
+<PreviewInputTextWithHintAndHelp />
+
+```tsx
+<InputText name="name" title="Title" hint={<span className="text-red-500">Hint text</span>} />
+```
+
+import PreviewInputTextWithAllOptions from "~/components/ui/input/previews/text/PreviewInputTextWithAllOptions";
+
+### InputText - with all Options
+
+<PreviewInputTextWithAllOptions />
+
+```tsx
+import InputText from "~/components/ui/input/InputText";
+
+export default function PreviewInputTextWithAllOptions() {
+  const [value, setValue] = useState(0);
+  return <InputText name="name" title="Title" value={value} setValue={setValue} min={0} max={10} required step="0.01" />;
+}
+```
