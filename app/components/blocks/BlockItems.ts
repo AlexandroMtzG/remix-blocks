@@ -38,7 +38,12 @@ export type BlockItem = {
 // ];
 
 export function getAllBlocksByGroup(availableOnly: boolean = false) {
-  const groups: { title: string; path: string; items: BlockItem[] }[] = [];
+  const groups: {
+    title: string;
+    path: string;
+    items: BlockItem[];
+    hideFromCommandPalette?: boolean;
+  }[] = [];
   let blocks: BlockItem[] = getAllBlocks();
   if (availableOnly) {
     blocks = getAllBlocks().filter((f) => f.createdAt);
@@ -52,6 +57,7 @@ export function getAllBlocksByGroup(availableOnly: boolean = false) {
         title: block.group,
         path: "/blocks/" + block.group.toLowerCase(),
         items: [block],
+        hideFromCommandPalette: true,
       });
     }
   });
@@ -93,6 +99,27 @@ export function getAllBlocks(): BlockItem[] {
       integrations: [],
     },
     {
+      group: "Lists",
+      title: "Table",
+      path: "/blocks/lists/table",
+      createdAt: new Date("2022-06-23"),
+      integrations: [],
+    },
+    {
+      group: "Lists",
+      title: "Kanban",
+      path: "/blocks/lists/kanban",
+      createdAt: undefined,
+      integrations: [],
+    },
+    {
+      group: "Lists",
+      title: "Calendar",
+      path: "/blocks/lists/calendar",
+      createdAt: undefined,
+      integrations: [],
+    },
+    {
       group: "Email",
       title: "Contact form with Formspree",
       path: "/blocks/email/contact-form-with-formspree",
@@ -121,9 +148,23 @@ export function getAllBlocks(): BlockItem[] {
       integrations: [stripe],
     },
     {
+      group: "Subscriptions",
+      title: "Subscribe or cancel to a Stripe plan",
+      path: "/blocks/subscriptions/create-pricing-plans-with-stripe",
+      createdAt: undefined,
+      integrations: [stripe],
+    },
+    {
       group: "Database",
       title: "Table Pagination with Prisma",
       path: "/blocks/database/table-pagination-with-prisma",
+      createdAt: undefined,
+      integrations: [prisma],
+    },
+    {
+      group: "Database",
+      title: "CRUD views and forms with Prisma",
+      path: "/blocks/database/crud-views-and-forms-with-prisma",
       createdAt: undefined,
       integrations: [prisma],
     },

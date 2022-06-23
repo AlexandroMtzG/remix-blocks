@@ -16,6 +16,7 @@ export const SidebarItems: SideBarItem[] = [
   {
     title: "Blocks",
     path: "/blocks",
+    hideFromCommandPalette: true,
     items: [
       {
         title: "All blocks",

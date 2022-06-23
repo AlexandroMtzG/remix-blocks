@@ -38,21 +38,41 @@ export default function ButtonTertiary({ className = "", type = "button", onClic
           );
         } else {
           return (
-            <Link
-              to={to}
-              target={target}
-              className={clsx(
-                className,
-                "border-b border-transparent inline-flex space-x-2 items-center mx-1 my-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-300 focus:rounded-md",
-                disabled ? "cursor-not-allowed opacity-75" : " hover:border-dotted",
-                !destructive && "text-theme-700 border-b ",
-                destructive && "text-red-600",
-                !disabled && !destructive && "hover:text-theme-800 focus:text-theme-900 ",
-                !disabled && destructive && "hover:text-red-800 focus:text-red-900 hover:border-red-300"
+            <>
+              {to.startsWith("http") ? (
+                <a
+                  href={to}
+                  target={target}
+                  className={clsx(
+                    className,
+                    "border-b border-transparent inline-flex space-x-2 items-center mx-1 my-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-300 focus:rounded-md",
+                    disabled ? "cursor-not-allowed opacity-75" : " hover:border-dotted",
+                    !destructive && "text-theme-700 border-b ",
+                    destructive && "text-red-600",
+                    !disabled && !destructive && "hover:text-theme-800 focus:text-theme-900 ",
+                    !disabled && destructive && "hover:text-red-800 focus:text-red-900 hover:border-red-300"
+                  )}
+                >
+                  {children}
+                </a>
+              ) : (
+                <Link
+                  to={to}
+                  target={target}
+                  className={clsx(
+                    className,
+                    "border-b border-transparent inline-flex space-x-2 items-center mx-1 my-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-300 focus:rounded-md",
+                    disabled ? "cursor-not-allowed opacity-75" : " hover:border-dotted",
+                    !destructive && "text-theme-700 border-b ",
+                    destructive && "text-red-600",
+                    !disabled && !destructive && "hover:text-theme-800 focus:text-theme-900 ",
+                    !disabled && destructive && "hover:text-red-800 focus:text-red-900 hover:border-red-300"
+                  )}
+                >
+                  {children}
+                </Link>
               )}
-            >
-              {children}
-            </Link>
+            </>
           );
         }
       })()}

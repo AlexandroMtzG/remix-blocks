@@ -11,7 +11,7 @@ function getCommands(): Command[] {
 }
 
 function getCommandsFromItem(item: SideBarItem, commands: Command[], parent: string[]) {
-  if (item.path && item.title) {
+  if (item.path && item.title && !item.hideFromCommandPalette) {
     let description = item.description ?? "";
     if (parent.length > 0) {
       description = parent.join(" / ");

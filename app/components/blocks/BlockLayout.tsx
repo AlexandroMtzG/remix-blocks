@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { useLocation } from "remix";
 import BreadcrumbSimple from "../ui/breadcrumbs/BreadcrumbSimple";
+import ButtonTertiary from "../ui/buttons/ButtonTertiary";
 import BlockDemoCodeToggle from "./BlockDemoCodeToggle";
 import { BlockItem } from "./BlockItems";
 
@@ -45,15 +46,19 @@ export default function BlockLayout({ item, children, details, className = "max-
             <div>
               <BlockDemoCodeToggle />
             </div>
-            {/* <div className="hidden md:block">
-              <ButtonTertiary onClick={copy} className="p-1">
-                {!copied ? (
+            <div className="hidden md:block">
+              <ButtonTertiary target="_blank" to={`https://github.com/AlexandroMtzG/remix-blocks/blob/main/app/routes${item.path}/index.tsx`} className="p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-theme-500 hover:text-theme-600" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+                {/* {!copied ? (
                   <ClipboardIcon className="h-5 w-5 text-theme-500 hover:text-theme-600" />
                 ) : (
                   <ClipboardFilledIcon className="h-5 w-5 text-theme-500 hover:text-theme-600" />
-                )}
+                )} */}
               </ButtonTertiary>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

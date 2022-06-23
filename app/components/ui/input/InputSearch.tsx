@@ -4,11 +4,12 @@ import ButtonPrimary from "../buttons/ButtonPrimary";
 interface Props {
   value: string;
   setValue: React.Dispatch<React.SetStateAction<string>>;
+  newTitle?: string;
   onNew?: () => void;
   onNewRoute?: string;
 }
 
-export default function InputSearch({ value, setValue, onNew, onNewRoute }: Props) {
+export default function InputSearch({ value, setValue, onNew, onNewRoute, newTitle }: Props) {
   const { t } = useTranslation();
   return (
     <div className="flex space-x-2 justify-between">
@@ -33,8 +34,8 @@ export default function InputSearch({ value, setValue, onNew, onNewRoute }: Prop
           autoComplete="off"
         />
       </div>
-      {onNew && <ButtonPrimary onClick={onNew}>{t("shared.new")}</ButtonPrimary>}
-      {onNewRoute && <ButtonPrimary to={onNewRoute}>{t("shared.new")}</ButtonPrimary>}
+      {onNew && <ButtonPrimary onClick={onNew}>{newTitle ?? t("shared.new")}</ButtonPrimary>}
+      {onNewRoute && <ButtonPrimary to={onNewRoute}>{newTitle ?? t("shared.new")}</ButtonPrimary>}
     </div>
   );
 }

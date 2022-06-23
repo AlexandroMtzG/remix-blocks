@@ -12,7 +12,7 @@ export default function PreviewBreadcrumbs() {
           className="w-full"
           home="/"
           menu={[
-            { title: "Docs", routePath: "/docs" },
+            { title: "RemixBlocks", routePath: "/" },
             { title: "Components", routePath: "/components" },
             { title: "Breadcrumbs", routePath: currentRoute },
           ]}
@@ -25,7 +25,7 @@ export default function PreviewBreadcrumbs() {
           className="w-full not-prose"
           home="/"
           menu={[
-            { title: "Docs", routePath: "/docs" },
+            { title: "RemixBlocks", routePath: "/" },
             { title: "Components", routePath: "/components" },
             { title: "Breadcrumbs", routePath: currentRoute },
           ]}

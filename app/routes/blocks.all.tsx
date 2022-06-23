@@ -54,7 +54,7 @@ export default function AllBlocksRoute() {
   return (
     <div className="not-prose">
       <h3 className="font-bold mb-2">All Blocks</h3>
-      <InputSearch value={searchInput} setValue={setSearchInput} />
+      <InputSearch value={searchInput} setValue={setSearchInput} newTitle="Request" onNewRoute="https://github.com/AlexandroMtzG/remix-blocks/issues/new" />
       <TableSimple
         items={filteredItems()}
         headers={[

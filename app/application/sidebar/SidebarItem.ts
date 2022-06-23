@@ -11,4 +11,5 @@ export interface SideBarItem {
   items?: SideBarItem[];
   side?: ReactNode;
   exact?: boolean;
+  hideFromCommandPalette?: boolean;
 }
