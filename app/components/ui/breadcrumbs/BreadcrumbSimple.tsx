@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Link, useParams } from "remix";
-import UrlUtils from "~/utils/app/UrlUtils";
+import UrlUtils from "~/utils/shared/UrlUtils";
 import RightIcon from "../icons/RightIcon";
 
 interface MenuItem {

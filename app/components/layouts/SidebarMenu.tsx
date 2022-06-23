@@ -5,7 +5,7 @@ import { SidebarGroup } from "~/application/sidebar/SidebarGroup";
 import clsx from "~/utils/shared/ClassesUtils";
 import { useTranslation } from "react-i18next";
 import { useParams } from "remix";
-import UrlUtils from "~/utils/app/UrlUtils";
+import UrlUtils from "~/utils/shared/UrlUtils";
 import { SidebarItems } from "~/application/sidebar/SidebarItems";
 
 interface Props {

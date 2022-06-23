@@ -1,7 +1,7 @@
 import { redirect } from "remix";
 import { Language } from "remix-i18next";
 import { i18nHelper } from "~/locale/i18n.utils";
-import UrlUtils from "~/utils/app/UrlUtils";
+import UrlUtils from "~/utils/shared/UrlUtils";
 import { BlockItem, getBlockByPath } from "./BlockItems";
 
 export type BlockLoaderData = {
