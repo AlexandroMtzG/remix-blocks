@@ -1,4 +1,3 @@
-import { TenantUserType } from "../enums/tenants/TenantUserType";
 import { SvgIcon } from "../enums/shared/SvgIcon";
 import { ReactNode } from "react";
 

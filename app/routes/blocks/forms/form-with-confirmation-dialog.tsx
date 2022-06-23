@@ -1,4 +1,5 @@
-import { LoaderFunction, MetaFunction, useLoaderData, Outlet, json } from "remix";
+import { LoaderFunction, MetaFunction, json } from "remix";
+import { useLoaderData, Outlet } from "@remix-run/react";
 import BlockLayout from "~/components/blocks/BlockLayout";
 import { BlockLoaderData, getBlockLoaderData } from "~/components/blocks/BlockLoader";
 import styles from "highlight.js/styles/night-owl.css";

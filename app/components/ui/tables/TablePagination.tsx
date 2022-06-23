@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useSearchParams, useTransition } from "remix";
+import { useSearchParams, useTransition } from "@remix-run/react";
 import ButtonSecondary from "../buttons/ButtonSecondary";
 
 interface Props {

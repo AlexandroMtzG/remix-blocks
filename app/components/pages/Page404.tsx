@@ -1,5 +1,4 @@
-import { useTranslation } from "react-i18next";
-import { useNavigate } from "remix";
+import { useNavigate } from "@remix-run/react";
 import Logo from "../front/Logo";
 
 export default function Page404() {

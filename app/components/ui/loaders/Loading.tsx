@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useTransition } from "remix";
+import { useTransition } from "@remix-run/react";
 
 interface Props {
   small?: boolean;

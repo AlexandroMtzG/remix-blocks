@@ -1,4 +1,4 @@
-import LogoTailwindCSS from "~/assets/logos/tailwindcss.png";
+// import LogoTailwindCSS from "~/assets/logos/tailwindcss.png";
 import LogoPrisma from "~/assets/logos/prisma.png";
 import LogoStripe from "~/assets/logos/stripe.png";
 import LogoPostmark from "~/assets/logos/postmark.png";
@@ -171,12 +171,12 @@ export function getAllBlocks(): BlockItem[] {
   ];
 }
 
-const tailwindcss = {
-  title: "Tailwind CSS",
-  url: "https://tailwindcss.com",
-  img: LogoTailwindCSS,
-  className: "hover:text-teal-500",
-};
+// const tailwindcss = {
+//   title: "Tailwind CSS",
+//   url: "https://tailwindcss.com",
+//   img: LogoTailwindCSS,
+//   className: "hover:text-teal-500",
+// };
 
 const prisma = {
   title: "Prisma",

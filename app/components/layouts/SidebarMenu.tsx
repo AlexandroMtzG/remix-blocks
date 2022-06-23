@@ -4,7 +4,7 @@ import { SideBarItem } from "~/application/sidebar/SidebarItem";
 import { SidebarGroup } from "~/application/sidebar/SidebarGroup";
 import clsx from "~/utils/shared/ClassesUtils";
 import { useTranslation } from "react-i18next";
-import { useParams } from "remix";
+import { useParams } from "@remix-run/react";
 import UrlUtils from "~/utils/shared/UrlUtils";
 import { SidebarItems } from "~/application/sidebar/SidebarItems";
 

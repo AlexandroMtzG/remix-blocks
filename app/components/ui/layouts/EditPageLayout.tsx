@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { useParams } from "remix";
+import { useParams } from "@remix-run/react";
 import BreadcrumbSimple from "../breadcrumbs/BreadcrumbSimple";
 
 interface Props {

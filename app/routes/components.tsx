@@ -1,5 +1,5 @@
 import styles from "highlight.js/styles/night-owl.css";
-import { Outlet } from "remix";
+import { Outlet } from "@remix-run/react";
 
 export const links = () => {
   return [

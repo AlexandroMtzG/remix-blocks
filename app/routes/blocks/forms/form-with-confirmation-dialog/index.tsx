@@ -1,5 +1,6 @@
 import { FormEvent, useRef, useState } from "react";
-import { LoaderFunction, json, ActionFunction, MetaFunction, useActionData, useTransition, useSubmit, Form } from "remix";
+import { LoaderFunction, json, ActionFunction, MetaFunction } from "remix";
+import { useActionData, useTransition, useSubmit, Form } from "@remix-run/react";
 import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
 import InputText from "~/components/ui/input/InputText";
 import ConfirmModal, { RefConfirmModal } from "~/components/ui/modals/ConfirmModal";

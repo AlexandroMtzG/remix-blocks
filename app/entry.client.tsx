@@ -1,7 +1,7 @@
 import i18next from "i18next";
 import { hydrate } from "react-dom";
 import { I18nextProvider, initReactI18next } from "react-i18next";
-import { RemixBrowser } from "remix";
+import { RemixBrowser } from "@remix-run/react";
 
 i18next
   .use(initReactI18next)

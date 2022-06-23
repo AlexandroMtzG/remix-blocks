@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useSearchParams } from "remix";
+import { Link, useSearchParams } from "@remix-run/react";
 import { PaginationDto } from "~/application/dtos/data/PaginationDto";
 import { InputType } from "~/application/enums/shared/InputType";
 import ButtonTertiary from "../buttons/ButtonTertiary";

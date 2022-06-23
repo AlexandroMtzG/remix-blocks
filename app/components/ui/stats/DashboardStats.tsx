@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
-import { useTransition } from "remix";
+import { useTransition } from "@remix-run/react";
 import { Stat } from "~/application/dtos/stats/Stat";
 import { StatChange } from "~/application/dtos/stats/StatChange";
 

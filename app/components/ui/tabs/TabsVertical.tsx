@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation, useNavigate } from "remix";
+import { Link, useLocation, useNavigate } from "@remix-run/react";
 import clsx from "~/utils/shared/ClassesUtils";
 
 export interface TabItem {

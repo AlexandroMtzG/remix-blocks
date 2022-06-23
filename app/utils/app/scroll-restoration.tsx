@@ -1,7 +1,7 @@
 import { MutableRefObject, useCallback, useRef } from "react";
 import { useEffect } from "react";
 import { useLayoutEffect } from "react";
-import { useBeforeUnload, useLocation, useTransition } from "remix";
+import { useBeforeUnload, useLocation, useTransition } from "@remix-run/react";
 
 let STORAGE_KEY = "positions";
 

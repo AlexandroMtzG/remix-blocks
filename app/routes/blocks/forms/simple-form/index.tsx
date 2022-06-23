@@ -1,4 +1,5 @@
-import { LoaderFunction, json, MetaFunction, Form, useActionData, ActionFunction, useTransition } from "remix";
+import { LoaderFunction, json, MetaFunction, ActionFunction } from "remix";
+import { Form, useActionData, useTransition } from "@remix-run/react";
 import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
 import InputText from "~/components/ui/input/InputText";
 

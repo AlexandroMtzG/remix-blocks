@@ -1,17 +1,5 @@
-import {
-  LiveReload,
-  Outlet,
-  LinksFunction,
-  Links,
-  useCatch,
-  MetaFunction,
-  Meta,
-  Scripts,
-  ScrollRestoration,
-  LoaderFunction,
-  useLoaderData,
-  ActionFunction,
-} from "remix";
+import { LinksFunction, MetaFunction, LoaderFunction, ActionFunction } from "remix";
+import { useLoaderData, Links, useCatch, Meta, Scripts, ScrollRestoration, LiveReload, Outlet } from "@remix-run/react";
 import styles from "./styles/app.css";
 import { useSetupTranslations } from "remix-i18next";
 import { createUserSession, getUserInfo } from "./utils/session.server";
@@ -154,7 +142,6 @@ export function CatchBoundary() {
 }
 
 export function ErrorBoundary({ error }: { error: Error }) {
-  const data = useRootData();
   return (
     <Document title="Unexpected error">
       <div className="mx-auto p-12 text-center">

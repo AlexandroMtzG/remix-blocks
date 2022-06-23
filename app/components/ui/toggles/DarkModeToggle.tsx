@@ -1,6 +1,6 @@
-import { useLocation, useSubmit } from "remix";
 import { useRootData } from "~/utils/data/useRootData";
 import clsx from "~/utils/shared/ClassesUtils";
+import { useLocation, useSubmit } from "@remix-run/react";
 
 export default function DarkModeToggle({ className }: { className: string }) {
   const { userSession } = useRootData();

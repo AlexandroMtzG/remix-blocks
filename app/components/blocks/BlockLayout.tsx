@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { useLocation } from "remix";
+import { useLocation } from "@remix-run/react";
 import BreadcrumbSimple from "../ui/breadcrumbs/BreadcrumbSimple";
 import ButtonTertiary from "../ui/buttons/ButtonTertiary";
 import BlockDemoCodeToggle from "./BlockDemoCodeToggle";

@@ -1,4 +1,5 @@
-import { LoaderFunction, json, MetaFunction, useLoaderData } from "remix";
+import { LoaderFunction, json, MetaFunction } from "remix";
+import { useLoaderData } from "@remix-run/react";
 import TableSimple from "~/components/ui/tables/TableSimple";
 
 interface EmployeeDto {

@@ -1,7 +1,8 @@
 import { createInstance } from "i18next";
 import { renderToString } from "react-dom/server";
 import { I18nextProvider, initReactI18next } from "react-i18next";
-import { EntryContext, RemixServer } from "remix";
+import { EntryContext } from "remix";
+import { RemixServer } from "@remix-run/react";
 
 export default async function handleRequest(request: Request, responseStatusCode: number, responseHeaders: Headers, remixContext: EntryContext) {
   // Here you also need to initialize i18next using initReactI18next, you should

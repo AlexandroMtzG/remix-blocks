@@ -1,9 +1,10 @@
-import { json, useMatches } from "remix";
+import { json } from "remix";
 import { Language } from "remix-i18next";
 import { Command } from "~/application/dtos/layout/Command";
 import { i18nHelper } from "~/locale/i18n.utils";
 import { getUserInfo, UserSession } from "../session.server";
 import CommandUtils from "../shared/CommandUtils";
+import { useMatches } from "@remix-run/react";
 
 export type AppRootData = {
   title: string;

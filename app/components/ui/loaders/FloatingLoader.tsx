@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import { useTransition } from "remix";
+import { useTransition } from "@remix-run/react";
 import { useSpinDelay } from "spin-delay";
 import { Transition } from "@headlessui/react";
 import { useTranslation } from "react-i18next";

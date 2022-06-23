@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
 import UrlUtils from "~/utils/shared/UrlUtils";
-import { useParams } from "remix";
+import { useParams } from "@remix-run/react";
 
 interface MenuItem {
   title: string;

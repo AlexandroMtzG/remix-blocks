@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Link, useParams } from "remix";
+import { Link, useParams } from "@remix-run/react";
 import UrlUtils from "~/utils/shared/UrlUtils";
 import RightIcon from "../icons/RightIcon";
 

@@ -3,7 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import clsx from "~/utils/shared/ClassesUtils";
 import { useTranslation } from "react-i18next";
-import { Link } from "remix";
+import { Link } from "@remix-run/react";
 
 export interface RefInputSelector {
   focus: () => void;

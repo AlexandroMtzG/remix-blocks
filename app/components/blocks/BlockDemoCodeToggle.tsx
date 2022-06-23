@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react";
-import { useLocation, useNavigate } from "remix";
+import { useLocation, useNavigate } from "@remix-run/react";
 import InputRadioGroup from "../ui/input/InputRadioGroup";
 
 export default function BlockDemoCodeToggle() {

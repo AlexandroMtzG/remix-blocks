@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
-import { useFetcher } from "remix";
+import { useFetcher } from "@remix-run/react";
 
 const social = [
   {

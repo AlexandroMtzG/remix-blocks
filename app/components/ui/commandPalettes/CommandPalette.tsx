@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { Combobox, Dialog, Transition } from "@headlessui/react";
 import clsx from "~/utils/shared/ClassesUtils";
-import { useNavigate } from "remix";
+import { useNavigate } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import { Command } from "~/application/dtos/layout/Command";
 
