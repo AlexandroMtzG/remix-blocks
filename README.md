@@ -1,5 +1,7 @@
 # remix-blocks
 
+![RemixBlocks](https://yahooder.sirv.com/remixblocks/seo/cover.png)
+
 ## What is RemixBlocks?
 
 Ready-to-use [Remix](https://remix.run) + [Tailwind CSS](https://tailwindcss.com/) routes, and [UI components](/components), all blocks:
