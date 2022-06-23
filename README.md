@@ -2,7 +2,7 @@
 
 ![RemixBlocks](https://yahooder.sirv.com/remixblocks/seo/cover.png)
 
-## What is a Remix Block?
+## What is RemixBlocks?
 
 Ready-to-use [Remix](https://remix.run) + [Tailwind CSS](https://tailwindcss.com/) routes, and [UI components](/components).
 
