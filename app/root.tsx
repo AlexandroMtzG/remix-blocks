@@ -39,7 +39,7 @@ export const meta: MetaFunction = ({ data }) => {
     "og:title": "RemixBlocks | Ready-to-use Remix + Tailwind CSS routes and components",
     "og:type": "website",
     "og:url": "https://remixblocks.com",
-    "og:image": "https://yahooder.sirv.com/remixblocks/seo/cover.png",
+    "og:image": "https://yahooder.sirv.com/remixblocks/seo/cover-dark.png",
     "og:card": "summary_large_image",
     "og:creator": "@AlexandroMtzG",
     "og:site": "https://remixblocks.com",
