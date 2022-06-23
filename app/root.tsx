@@ -163,16 +163,14 @@ export function ErrorBoundary({ error }: { error: Error }) {
           <button type="button" onClick={() => window.location.reload()} className="underline">
             please try again
           </button>
-          {data.debug && (
-            <div className="flex flex-col space-y-1 text-left">
-              <div>
-                <span className="font-bold">Message:</span> {error.message}
-              </div>
-              <div>
-                <span className="font-bold">Stack:</span> {error.stack}
-              </div>
+          <div className="flex flex-col space-y-1 text-left">
+            <div>
+              <span className="font-bold">Message:</span> {error.message}
             </div>
-          )}
+            <div>
+              <span className="font-bold">Stack:</span> {error.stack}
+            </div>
+          </div>
         </h1>
       </div>
     </Document>
