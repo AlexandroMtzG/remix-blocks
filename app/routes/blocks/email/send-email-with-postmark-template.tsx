@@ -1,4 +1,4 @@
-import { LoaderFunction, MetaFunction, json } from "remix";
+import { json, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { useLoaderData, Outlet } from "@remix-run/react";
 import BlockLayout from "~/components/blocks/BlockLayout";
 import { BlockLoaderData, getBlockLoaderData } from "~/components/blocks/BlockLoader";

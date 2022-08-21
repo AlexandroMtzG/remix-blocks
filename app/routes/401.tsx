@@ -1,4 +1,4 @@
-import { json, LoaderFunction, MetaFunction } from "remix";
+import { json, LoaderFunction, MetaFunction } from "@remix-run/node";
 import Page401 from "~/components/pages/Page401";
 import { i18nHelper } from "~/locale/i18n.utils";
 

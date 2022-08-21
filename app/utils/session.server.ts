@@ -1,4 +1,4 @@
-import { createCookieSessionStorage, redirect } from "remix";
+import { createCookieSessionStorage, redirect } from "@remix-run/node";
 import { URLSearchParams } from "url";
 // import { jitsu } from "./jitsu.server";
 

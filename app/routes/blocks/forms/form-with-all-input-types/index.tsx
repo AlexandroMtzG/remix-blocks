@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { LoaderFunction, json, MetaFunction, ActionFunction } from "remix";
+import { ActionFunction, json, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { Form, useActionData } from "@remix-run/react";
 import ButtonPrimary from "~/components/ui/buttons/ButtonPrimary";
 import InputCheckbox from "~/components/ui/input/InputCheckbox";

@@ -1,4 +1,4 @@
-import { json, LoaderFunction } from "remix";
+import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData, Link } from "@remix-run/react";
 import { Language } from "remix-i18next";
 import { i18nHelper } from "~/locale/i18n.utils";

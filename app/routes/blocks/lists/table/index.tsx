@@ -1,4 +1,4 @@
-import { LoaderFunction, json, MetaFunction } from "remix";
+import { json, LoaderFunction, MetaFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import TableSimple from "~/components/ui/tables/TableSimple";
 

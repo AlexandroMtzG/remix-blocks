@@ -1,4 +1,4 @@
-import { redirect } from "remix";
+import { redirect } from "@remix-run/node";
 import { Language } from "remix-i18next";
 import { i18nHelper } from "~/locale/i18n.utils";
 import UrlUtils from "~/utils/shared/UrlUtils";

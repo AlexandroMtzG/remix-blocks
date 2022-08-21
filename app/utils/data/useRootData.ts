@@ -1,4 +1,4 @@
-import { json } from "remix";
+import { json } from "@remix-run/node";
 import { Language } from "remix-i18next";
 import { Command } from "~/application/dtos/layout/Command";
 import { i18nHelper } from "~/locale/i18n.utils";
