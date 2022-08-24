@@ -22,3 +22,4 @@ prisma/dev.db
 .env.production
 
 .idea
+api/_assets
