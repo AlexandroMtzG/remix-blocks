@@ -1,5 +1,5 @@
-import { SubscriptionPriceDto } from "~/application/dtos/core/subscriptions/SubscriptionPriceDto";
-import { SubscriptionProductDto } from "~/application/dtos/core/subscriptions/SubscriptionProductDto";
+import { SubscriptionPriceDto } from "~/application/dtos/subscriptions/SubscriptionPriceDto";
+import { SubscriptionProductDto } from "~/application/dtos/subscriptions/SubscriptionProductDto";
 import { SubscriptionBillingPeriod } from "~/application/enums/subscriptions/SubscriptionBillingPeriod";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
