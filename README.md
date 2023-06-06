@@ -13,12 +13,12 @@ Ready-to-use [Remix](https://remix.run) + [Tailwind CSS](https://tailwindcss.com
 
 ## Do you want to build your own SaaS?
 
-Check out [SaasRock](http://saasrock.com/), a multi-tenant framework for building SaaS apps, all of these blocks are from SaasRock.
+Check out [SaasRock](http://saasrock.com/?ref=remixblocks&utm_content=readme), a multi-tenant framework for building SaaS apps, all of these blocks are from SaasRock.
 
 ## Support
 
-If you like this project, [star it](https://github.com/AlexandroMtzG/remix-blocks) ⭐, [support me](https://github.com/sponsors/AlexandroMtzG) 😊 or subscribe to [SaasRock](https://alexandromg.gumroad.com/l/SaasRock) for more 🚀.
+If you like this project, [star it](https://github.com/AlexandroMtzG/remix-blocks) ⭐, or subscribe to [SaasRock](https://saasrock.com/?ref=remixblocks&utm_content=readme) for more 🚀.
 
 ## New blocks?
 
-Subscribe to the [newsletter](https://saasrock.com/newsletter) or [follow me](https://twitter.com/AlexandroMtzG) on Twitter to get notified when new blocks are added.
+Subscribe to the [newsletter](https://saasrock.com/newsletter?ref=remixblocks&utm_content=readme) or [follow me](https://twitter.com/AlexandroMtzG) on Twitter to get notified when new blocks are added.

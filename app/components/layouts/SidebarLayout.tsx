@@ -152,7 +152,7 @@ export default function SidebarLayout({ children, onOpenCommandPalette }: Props)
             </div>
             <div className="flex items-center md:ml-6 space-x-3">
               {/* <DarkModeToggle /> */}
-              <a href="http://saasrock.com" className="">
+              <a href="http://saasrock.com/?ref=remixblocks&utm_content=header" className="">
                 {/* <img className={"hidden dark:block h-12 w-auto mx-auto"} src={SaasRockLogoDark} alt="SaasRock Logo" />
                 <img className={"dark:hidden h-12 w-auto mx-auto"} src={SaasRockLogoLight} alt="SaasRock Logo" /> */}
                 <img className={"h-9 w-auto mx-auto"} src={SaasRockLogoLight} alt="SaasRock Logo" />

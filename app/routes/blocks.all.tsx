@@ -105,7 +105,7 @@ export default function AllBlocksRoute() {
             formattedValue: (i) => (
               <div>
                 {i.createdAt ? (
-                  <span className="text-gray-400">{DateUtils.dateDM(i.createdAt)}</span>
+                  <span className="text-gray-400">{DateUtils.dateAgo(i.createdAt)}</span>
                 ) : (
                   <span className="text-gray-300 italic text-xs">Coming soon</span>
                 )}
